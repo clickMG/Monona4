@@ -1,0 +1,72 @@
+@import 
+"./varColores", 
+"./varFuentes"
+;
+
+header{
+    .offcanvas-body{
+        background-color: $grisOscuro;
+    }
+
+    .navbar-dark{
+        .navbar-toggler{
+            border: none;
+            color: transparent;
+
+            .menu-hamburguesa{
+                color: $colorPpal;
+                font-size: 40px;
+            }
+        }
+
+        .offcanvas-header{
+            background-color: $grisOscuro;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .botonCerrar{
+                background-color: transparent;
+                border: none;
+                color: $colorPpal;
+                font-size: 25px;
+                &:hover{
+                    color: $colorSec;
+                }
+            }
+        }
+        .offcanvas-body{
+            text-align: center;
+        }
+    }
+
+    
+    .navbar{
+        background-color: $grisOscuro;
+
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $colorPpal;
+                    font-family: $textoLogo;
+                    &:hover{
+                        color: $colorSec;
+                    }
+                    
+                }
+                .active{
+                    font-weight: bold;
+                }
+            }
+           
+        }
+    }
+
+    .navbar-brand{
+        font-family: $textoLogo;
+        color: $colorPpal !important;
+        font-size: 30px;
+        align-self: center;
+        
+    }
+}

@@ -1,0 +1,50 @@
+@import "./varColores";
+
+footer{
+    width: 100%;
+    background-color: $grisOscuro;
+
+    .container{
+        
+        section{
+    
+                font-size: 0px; //linea de las redes
+                text-align: center;
+      
+            .bi-facebook, .bi-instagram, .bi-twitter{
+                padding-right: 30px;
+                font-size: 30px;
+                color: rgb(170, 170, 170);
+                text-decoration: none;
+            }
+            .bi-facebook{
+                transition: 0.5s;
+                &:hover{
+                    color: rgb(83, 89, 179);
+                }
+            }
+            .bi-twitter{
+                transition: 0.5s;
+                &:hover{
+                    color: rgb(107, 233, 255);
+                }
+                
+            }
+            .bi-instagram{
+                transition: 0.5s;
+                &:hover{
+                    color: rgb(184, 52, 196);
+                }
+                
+            }
+            
+        }
+    
+    }
+    div{
+        p{
+            font-family: $fuentePpal;
+            color: $colorPpal;
+        }
+    }
+}

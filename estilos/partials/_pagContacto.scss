@@ -1,0 +1,19 @@
+.alto{
+    height: map-get($estilos-form, "alto");
+    .formulario{
+        border: map-get($estilos-form, "borde");
+        margin: map-get($estilos-form, "margen");
+
+        form{
+            padding: map-get($estilos-form, "padding-def");
+
+            .form-control{
+                border: map-get($estilos-form, "borde");
+            }
+            .enviar{
+                text-align: map-get($estilos-form, "centrado");
+                margin-bottom: map-get($estilos-form, "margen-abajo");
+            }
+        }
+    }
+}

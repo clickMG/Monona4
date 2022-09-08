@@ -1,0 +1,143 @@
+@import 
+"./varColores", 
+"./varFuentes"
+;
+
+.bgImg-text-tptc{
+
+    background-image: url("../IMG/imagen1.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    height: 600px;
+    margin-bottom: 0;
+    text-shadow: 5px 5px $grisOscuro;
+    clip-path: polygon(100% 0, 100% 94%, 23% 100%, 0 94%, 0 0);
+    
+
+    .contenedor-tptc{
+
+        position: absolute;
+        top: 60px;
+        right: 500px;
+        
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        width: 100%;
+
+        .tptc-todo{
+            color: $amarillo;
+            font-family: $tptc;
+            font-size: 50px;
+            width: 100%;
+            line-height: 1.3em;
+            text-align: right;
+
+            animation-name: todo;
+            animation-duration: 1s;
+            transform: translate(500px);
+        }
+    
+        @keyframes todo {
+            0%{transform: translate(0%); opacity: 0%;}
+            100%{transform: translate(500px); opacity: 100%;}
+        }
+       
+        .tptc-tu-canino{
+            color: $amarillo;
+            font-family:  $tptc;
+            font-size: 50px;
+            width: 100%;
+            line-height: 1.3em;
+            text-align: right;
+
+            animation-name: tu-canino;
+            animation-duration: 1.1s;
+            transform: translate(500px);
+        }
+        @keyframes tu-canino {
+            0%{transform: translate(0%); opacity: 0%;}
+            75%{transform: translate(1px); opacity: 0%;}
+            100%{transform: translate(500px); opacity: 100%;}
+        }
+    }
+}
+
+.titulo {
+    @include titulos($color: $colorSec, $tamanio: 40px, $padTop: 10px);
+    text-shadow: 1.5px 1.5px $grisClaro;
+}
+
+.promociones{
+    font-family: $fuentePpal;
+    text-align: center;
+    font-size: 50px;
+}
+.contenedor-promos{
+    padding-bottom: 100px;
+}
+div{
+    div{
+        .card{
+            border: none;
+
+            .boton{
+                @extend %botonPpal;
+               
+            }
+        }
+        div{
+            div{
+                .titulo2{
+                    font-size: 20px;
+                    color: $colorPpal;
+                }
+                .bi-truck , .bi-credit-card-2-back, .bi-emoji-laughing{
+                    color: $colorPpal;
+                    font-size: 50px;
+                    margin: 5px;
+                }
+                p{
+                    font-size: 15px;
+                    font-family: $fuentePpal;
+                    color: $amarillo;
+                }
+                .card-text{
+                    color: rgb(0,0,0);
+                }
+                h5{
+                    font-family: $fuentePpal;
+                    color: $colorPpal;
+                }
+            }
+
+            .promo{
+                border: solid 3px $colorPpal;
+                margin: 10px 10px;
+                background-color: rgb(37, 37, 37);
+            }
+        }
+    }
+}
+
+div{
+    div{
+        .contenedor-img{
+            div{
+                img{
+                    width: 100%;
+                    
+                    animation-name: imagenAnimada;
+                    animation-duration: 4s;
+                }
+                @keyframes imagenAnimada {
+                    0%{opacity: 0%;}
+                    100%{opacity: 100%;}
+                }
+            }
+        }
+    }
+}
+
+

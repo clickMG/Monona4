@@ -1,0 +1,15 @@
+@import 
+"./varFuentes",
+"./varColores"
+;
+
+//TEXTOS
+@mixin titulos($color, $tamanio, $padTop) {
+    font-family: $fuentePpal;
+    text-align: center;
+    font-weight: bold;
+    color: $color;
+    font-size: $tamanio;
+    padding-top: $padTop;
+
+}

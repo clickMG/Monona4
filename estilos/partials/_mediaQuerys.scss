@@ -1,0 +1,83 @@
+@media screen and (min-width: 768px){
+    /* INICIO */
+    .contenido{
+        .main-inicio{
+            .textos{
+                .texto-inicio{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+   
+    form{
+        padding: 0 20%;
+        
+    }
+    .formulario{
+        margin: 20px 200px;
+    }
+
+    .titulo{
+        font-size:  50px;
+    }
+
+    // ARTICULOS 
+    .art-serv-seccion{
+        .art-serv-contenedor{
+            flex-direction: row;
+            .art-serv{
+                width: 210px;
+                height: 231px;
+        
+                .img-art-serv{
+                    width: 190px;
+                    height: 200px;
+                }
+        
+                .nom-art-serv{
+                    font-size: 25px;
+                } 
+            }
+        }
+
+        .art-serv-titulo{
+            font-size: 40px;
+        }
+    }   
+}
+
+
+@media screen and (min-width: 992px){
+    .botonCerrar{
+        display: none;
+    }
+    .offcanvas{
+        flex-direction: row;
+        justify-content: right;
+    }
+   
+}
+
+@media screen and (min-width: 1200px){
+    .art-serv-seccion{
+        .art-serv-contenedor{
+            
+            .art-serv{
+                width: 280px;
+                height: 291px;
+                
+               
+                .img-art-serv{
+                    width: 280px;
+                    height: 250px;
+                }
+            }
+
+        }
+
+        .art-serv-titulo{
+            font-size: 50px;
+        }
+    }   
+}
