@@ -208,6 +208,7 @@ header .navbar-brand {
 
 div div .card {
   border: none;
+  background-color: rgb(238, 238, 238);
 }
 div div div div .titulo2 {
   font-size: 20px;
@@ -345,6 +346,9 @@ footer div p {
     width: 210px;
     height: 231px;
   }
+  .art-serv-seccion .art-serv-contenedor .art-serv:hover {
+    box-shadow: 2px 2px 15px 0px #413e38;
+  }
   .art-serv-seccion .art-serv-contenedor .art-serv .img-art-serv {
     width: 190px;
     height: 200px;
@@ -377,6 +381,9 @@ footer div p {
   .art-serv-seccion .art-serv-titulo {
     font-size: 50px;
   }
+}
+body {
+  background-color: rgb(238, 238, 238);
 }
 
 /*# sourceMappingURL=styles.css.map */

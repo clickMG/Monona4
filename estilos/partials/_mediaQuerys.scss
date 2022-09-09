@@ -29,6 +29,9 @@
             .art-serv{
                 width: 210px;
                 height: 231px;
+                &:hover{
+                    box-shadow: 2px 2px 15px 0px $grisClaro;
+                }
         
                 .img-art-serv{
                     width: 190px;

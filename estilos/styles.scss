@@ -7,9 +7,13 @@
 "./partials/varIconos",
 "./partials/header",
 "./partials/pagArt-Serv",
-"./partials/inicioMain",
+"./partials/pagInicio",
 "./partials/footer",
 "./partials/pagContacto",
 "./partials/pagNosotros",
 "./partials/mediaQuerys"
 ;
+
+body{
+    background-color: $fondo;
+}

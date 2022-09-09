@@ -81,7 +81,8 @@ div{
     div{
         .card{
             border: none;
-
+            background-color: $fondo;
+            
             .boton{
                 @extend %botonPpal;
                
