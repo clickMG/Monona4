@@ -4,6 +4,12 @@
 ;
 
 header{
+
+    position: -webkit-sticky;  // para Safari
+    position: sticky;
+    top: 0; // requerido
+    z-index: 99;
+
     .offcanvas-body{
         background-color: $grisOscuro;
     }
