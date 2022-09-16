@@ -4,8 +4,8 @@
 ;
 
 .bgImg-text-tptc{
-
-    background-image: url("../IMG/imagen1.jpg");
+    
+    background-image: url("https://i.ibb.co/kXTXLt7/imagen1.jp");
     background-position:center;
     background-repeat: no-repeat;
     background-size: 115%;
@@ -84,6 +84,7 @@
 .contenedor-promos{
     padding-bottom: 100px;
 }
+
 div{
     div{
         .card{
@@ -129,23 +130,135 @@ div{
     }
 }
 
-div{
-    div{
-        .contenedor-img{
-            div{
-                img{
-                    width: 100%;
-                    
-                    animation-name: imagenAnimada;
-                    animation-duration: 4s;
-                }
-                @keyframes imagenAnimada {
-                    0%{opacity: 0%;}
-                    100%{opacity: 100%;}
+.art-serv-seccion{
+    .art-titulo{
+        padding: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+    //la clase titulo esta definida en _pagInicio.scss
+
+    .art-serv-contenedor{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        a{
+            text-decoration: none;
+            margin: 10px;
+        }
+        
+        .art-serv{
+            width: 170px;
+            height: auto;
+            background-color: #ffff80;
+            border: solid 2px $grisOscuro;
+            box-shadow: 1px 1px 5px 0px $grisClaro;
+            overflow:hidden;
+
+            .img-art-serv{
+                width: 100%;
+                height: auto;
+                
+                transition: transform .4s;
+                &:hover{
+                    transform: scale(1.1);
                 }
             }
         }
+
+        .nom-art-serv{
+            text-align: center;
+            background-color: $grisOscuro;
+            color: $colorPpal;
+            font-family: $fuentePpal;
+            padding: 5px;
+            margin: 0;
+        }
     }
 }
+
+@media screen and (min-width: 768px){ 
+    .art-serv-seccion{
+        .art-serv-contenedor{
+            flex-direction: row;
+            .art-serv{
+                width: auto;
+                height: auto;
+                &:hover{
+                    box-shadow: 2px 2px 15px 0px $grisClaro;
+                }
+        
+                .img-art-serv{
+                    
+                    height: 200px;
+                }
+        
+                .nom-art-serv{
+                    font-size: 25px;
+                } 
+            }
+        }
+
+        .art-serv-titulo{
+            font-size: 40px;
+        }
+    }   
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1200px){
+    .art-serv-seccion{
+        .art-serv-contenedor{
+            
+            .art-serv{
+                width: auto;
+                height: auto;
+              
+                .img-art-serv{ 
+                    width: 280px;
+                    height: 250px;
+                }
+        
+                // .nom-art-serv{
+                    
+                // } 
+            }
+        }
+
+        // .art-serv-titulo{
+            
+        // }
+    }  
+}
+
+
+// VER DE DONDE SON ESTOS ESTILOS --
+// div{
+//     div{
+//         .contenedor-img{
+//             div{
+//                 img{
+//                     width: 100%;
+                    
+//                     animation-name: imagenAnimada;
+//                     animation-duration: 4s;
+//                 }
+//                 @keyframes imagenAnimada {
+//                     0%{opacity: 0%;}
+//                     100%{opacity: 100%;}
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
 
 

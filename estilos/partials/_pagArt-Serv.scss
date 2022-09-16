@@ -1,47 +1,4 @@
-.art-serv-seccion{
-    .art-titulo{
-        padding: 30px;
-        font-size: 30px;
-        text-align: center;
-    }
-    //la clase titulo esta definida en _pagInicio.scss
 
-    .art-serv-contenedor{
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 50px;
-        
-        .art-serv{
-            width: 170px;
-            height: 200px;
-            margin: 10px;
-            border: solid 2px $grisOscuro;
-            box-shadow: 1px 1px 5px 0px $grisClaro;
-            overflow:hidden;
-
-            .nom-art-serv{
-                text-align: center;
-                background-color: $grisOscuro;
-                color: $colorPpal;
-                font-family: $fuentePpal;
-                padding: 5px;
-            }
-
-            .img-art-serv{
-                width: 100%;
-                height: 150px;
-                object-fit: contain;
-            
-                transition: transform .4s;
-                &:hover{
-                    transform: scale(1.1);
-                }
-            }
-            
-        }
-    }
-
+div{
+    background-color: red;
 }
