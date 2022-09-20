@@ -5,7 +5,7 @@
 
 .bgImg-text-tptc{
     
-    background-image: url("https://i.ibb.co/kXTXLt7/imagen1.jp");
+    background-image: url("https://i.ibb.co/kXTXLt7/imagen1.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: 115%;
@@ -92,8 +92,7 @@ div{
             background-color: $fondo;
             
             .boton{
-                @extend %botonPpal;
-               
+                @extend %botonPpal;   
             }
         }
         div{
@@ -125,6 +124,25 @@ div{
                 border: solid 3px $colorPpal;
                 margin: 10px 10px;
                 background-color: rgb(37, 37, 37);
+            }
+        }
+    }
+}
+
+div{
+    div{
+        .contenedor-img{
+            div{
+                img{
+                    width: 100%;
+                    
+                    animation-name: imagenAnimada;
+                    animation-duration: 4s;
+                }
+                @keyframes imagenAnimada {
+                    0%{opacity: 0%;}
+                    100%{opacity: 100%;}
+                }
             }
         }
     }
@@ -239,25 +257,8 @@ div{
 }
 
 
-// VER DE DONDE SON ESTOS ESTILOS --
-// div{
-//     div{
-//         .contenedor-img{
-//             div{
-//                 img{
-//                     width: 100%;
-                    
-//                     animation-name: imagenAnimada;
-//                     animation-duration: 4s;
-//                 }
-//                 @keyframes imagenAnimada {
-//                     0%{opacity: 0%;}
-//                     100%{opacity: 100%;}
-//                 }
-//             }
-//         }
-//     }
-// }
+
+
 
 
 

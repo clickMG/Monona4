@@ -1,19 +1,111 @@
 .alto{
     height: map-get($estilos-form, "alto");
+
+    .tit-contacto{
+        font-size: 30px;
+        padding: 5%;
+    }
+
     .formulario{
         border: map-get($estilos-form, "borde");
         margin: map-get($estilos-form, "margen");
 
+        // background-color: rgba(0, 0, 0, 0.596);
+        background-color: rgba(20, 20, 20, 0.815);;
+        margin: 0 15%;
+        
         form{
             padding: map-get($estilos-form, "padding-def");
 
+            .form-label{
+                color: $colorSec;
+                padding: 15px 0 0 0;
+            }
+
             .form-control{
                 border: map-get($estilos-form, "borde");
+                background-color: $fondo;
             }
             .enviar{
-                text-align: map-get($estilos-form, "centrado");
-                margin-bottom: map-get($estilos-form, "margen-abajo");
+                @extend %botonPpal;
+                margin-bottom: 25px;
             }
         }
     }
+}
+
+.img-fondo-contacto{
+    background-image: url(../../IMG/contactar.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 0;
+}
+
+
+//---------------------------------------@media-------------------------------------------
+
+@media screen and (min-width: 768px){
+    .alto{
+        
+        .tit-contacto{
+            font-size: 30px;
+            padding: 3%;
+        }
+    
+        .formulario{
+           margin: 0 15%;
+            form{
+                
+                .form-label{
+                    
+                }
+    
+                .form-control{
+                    
+                }
+                .enviar{
+                    
+                }
+            }
+        }
+    }
+    
+    .img-fondo-contacto{
+        
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    .alto{
+        
+        .tit-contacto{
+            font-size: 40px;
+            padding: 2%;
+        }
+    
+        .formulario{
+           margin: 0 25%;
+            form{
+                
+                .form-label{
+                    
+                }
+    
+                .form-control{
+                    
+                }
+                .enviar{
+                    
+                }
+            }
+        }
+    }
+    
+    .img-fondo-contacto{
+        
+    }
+    
 }

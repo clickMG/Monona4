@@ -20,10 +20,12 @@ main{
                         border-bottom: 1px solid transparent;
                         
                         &:hover{
+                            // color: $grisOscuro;
+                            // border-bottom: 1px solid $grisOscuro;
+                            // border-radius: 3px;
+                            // padding: 5px;
                             color: $grisOscuro;
-                            border-bottom: 1px solid $grisOscuro;
-                            border-radius: 3px;
-                            padding: 5px;
+                            font-weight:550;
                             
                         }
                     }
@@ -43,8 +45,19 @@ main{
                     text-align: left;
 
                     .accordion-button{
+                        background-color: $fondo;
                         &:not(.collapsed){
                             color: $grisOscuro;
+                            
+                            &::after{
+                                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                            }
+                        }
+                        // &:not(.collapsed)::after{
+                        //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                        // }
+                        &:focus{
+                            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.247);
                         }
                     }
                 }
@@ -57,6 +70,7 @@ main{
                             color: $grisClaro;
                             &:hover{
                                 color: $grisOscuro;
+                                font-weight:550;
                             }
                         }
                     }
@@ -65,6 +79,11 @@ main{
         }
 
         .cont-prods{
+
+            .tit-prod {
+                 @include titulos($color: $colorSec, $tamanio: 35px, $padTop: 10px);
+                text-shadow: 1.5px 1.5px $grisClaro;
+            }
             
             .prod{
                 padding: 15px;
@@ -73,12 +92,6 @@ main{
                 align-items: center;
                 justify-content: center;
                 border: solid 1px transparent;
-
-                &:hover{
-
-                }
-                    
-                
 
             .img-prod{
                 width: auto;
@@ -100,7 +113,7 @@ main{
                 }
                 .nom-prod{
                     
-                    @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: 10px);
+                    @include titulos($color: $grisOscuro, $tamanio: 18px, $padTop: 10px);
                     text-align: left;
                   
                 }
@@ -139,8 +152,7 @@ main{
                 //FLEX
                 display: flex;
                 flex-direction: column;
-                
-    
+
                 .categ-prod{
                     position: sticky;
                     top: 90px;
@@ -166,6 +178,11 @@ main{
             }
         }
         .cont-prods{
+
+            .tit-prod {
+                
+            }
+
             .prod{
         
                 &:hover{
@@ -176,12 +193,12 @@ main{
                     
                 }
                 .info-prod{
-                    
+
                     .nota-prod{
         
                     }
                     .nom-prod{
-                        
+                        @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: 10px);
                     }
                     .precio-prod{
                     
@@ -203,7 +220,70 @@ main{
 }
 
 @media screen and (min-width: 992px){
+    main{
+        .sec-prod{
+            
+            .filtros-prod{
+         
+                .categ-prod{
+                   
+                }
+
+                .filtros-img{
+                    max-width: 180px;
+                    align-self: center;
+                }
     
+                ul{
+                    
+                    li{
+                        
+                        a{
+                            
+                            &:hover{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filtros-prod-mov{
+                
+            }
+        }
+        .cont-prods{
+            .prod{
+        
+                &:hover{
+                    
+                    
+                }
+                .img-prod{
+                    
+                }
+                .info-prod{
+                
+                    .nota-prod{
+        
+                    }
+                    .nom-prod{
+                        
+                    }
+                    .precio-prod{
+                    
+                    }
+                    .descrip-prod{
+                      
+                    
+                    }
+                    .btn-prod{
+                    
+                    }
+                }
+            }
+        }
+    }    
 }
 
 @media screen and (min-width: 1200px){

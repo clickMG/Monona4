@@ -1,20 +1,86 @@
 .nos-main{
-    section{
-        div{
-            div{
-                div{
-                    .tarjeta-rot{
-                        animation-name: tarj-rot;
-                        animation-duration: 0.3s;
-                    }
-                    @keyframes tarj-rot {
-                        0%{transform: rotate(0);}
-                        25%{transform: rotate(1deg);}
-                        75%{transform: rotate(-1deg);}
-                        100%{transform: rotate(0deg);}
+    background-image: url(../../IMG/perrito-nosotros.jpg);
+    background-size: cover;
+
+
+    .nos-sect{
+        h1{
+            padding-top: 25px;
+        }
+
+        .nos-contenedor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 30px;
+
+            .nos-cuadro{
+                border: solid 3px $colorPpal;
+                margin: 10px 10px;
+                background-color: rgba(20, 20, 20, 0.815);
+                min-height: 200px;
+                max-width: 400px;
+                display: flex;
+                align-items: center;
+
+                p{
+                    color: $amarillo;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+
+            .tarjeta-rot{
+                animation-name: tarj-rot;
+                animation-duration: 0.3s;
+            }
+            @keyframes tarj-rot {
+                0%{transform: rotate(0);}
+                25%{transform: rotate(1deg);}
+                75%{transform: rotate(-1deg);}
+                100%{transform: rotate(0deg);}
+            }
+        }
+    }
+}
+
+// -------------------------------------@media--------------------------------------------------
+@media screen and (min-width: 768px) {
+    .nos-main{
+        .nos-sect{
+            .nos-contenedor{
+               
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 30px;
+    
+                .nos-cuadro{
+                    
+                    margin: 10px 10px;
+                    width: 500px;
+                    height: 370px;
+                   
+                    p{
+                        padding: 10px;
+                        font-size: 18px;
                     }
                 }
             }
+            
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .nos-main{
+        .nos-sect{
+            .nos-contenedor{
+                .nos-cuadro{
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+            
         }
     }
 }
