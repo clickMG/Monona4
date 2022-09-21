@@ -1,0 +1,213 @@
+.serv-contenedor{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    a{
+        text-decoration: none;
+        margin: 10px;
+    }
+    
+    .serv{
+        width: 170px;
+        height: auto;
+        background-color: #ffff80;
+        border: solid 2px $grisOscuro;
+        box-shadow: 1px 1px 5px 0px $grisClaro;
+        overflow:hidden;
+        margin: 5px;
+
+        .img-serv{
+            width: 100%;
+            height: auto;
+            
+            transition: transform .4s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .serv-items{
+
+            padding: 20px;
+            
+
+                /* The container */
+            .container {
+                display: block;
+                position: relative;
+                padding-left: 26px;
+                margin-bottom: 2px;
+                cursor: pointer;
+                font-size: 18px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                /* On mouse-over, add a grey background color */
+                &:hover input ~ .checkmark {
+                    background-color: #ccc;
+                }
+
+                /* Hide the browser's default checkbox */
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                    margin: auto;
+
+                    /* When the checkbox is checked, add a blue background */
+                    &:checked ~ .checkmark {
+                        background-color: $grisOscuro;
+                    }
+
+                    /* Show the checkmark when checked */
+                    &:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                }
+
+                /* Create a custom checkbox */
+                .checkmark {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    height: 16px;
+                    width: 16px;
+                    background-color: #eee;
+                    border: 1px solid $grisClaro;
+
+                    /* Create the checkmark/indicator (hidden when not checked) */
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+
+                    /* Style the checkmark/indicator */
+                    &:after {
+                        left: 5px;
+                        top: 2px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $colorSec;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            .serv-boton{
+                @extend %botonPpal;
+                padding: 3px;
+                margin-top: 15px;
+                width: 100%;
+            }
+
+            .modal{
+                top: 30%;
+                .modal-dialog{
+                    .modal-content{
+                        
+                        border: 1px solid $grisOscuro;
+                        border-radius: 10px;
+                        .modal-header{
+                            border-bottom: 1px solid $grisClaro;
+                            h5{
+                                color: $grisOscuro;
+                                font-size: 30px;
+                            }
+                        }
+
+                        .modal-footer{
+                            border-top: 1px solid $grisClaro;
+                            .btn{
+                                background-color: $grisClaro;
+                                color: $colorPpal;
+                                &:hover{
+                                    background-color: $grisOscuro;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+    .nom-serv{
+        text-align: center;
+        background-color: $grisOscuro;
+        color: $colorPpal;
+        font-family: $fuentePpal;
+        padding: 5px;
+        margin: 0;
+    }
+}
+
+// ---------------------------------------------@media-------------------------------------------------
+@media screen and (min-width: 768px){ 
+    .serv-seccion{
+        .serv-contenedor{
+            flex-direction: row;
+            align-items: stretch;
+            margin-bottom: 80px;
+            .serv{
+                width: auto;
+                height: auto;
+                &:hover{
+                    box-shadow: 2px 2px 15px 0px $grisClaro;
+                }
+        
+                .img-serv{
+                    
+                    height: 200px;
+                }
+        
+                .nom-serv{
+                    font-size: 25px;
+                } 
+            }
+        }
+
+        .serv-titulo{
+            font-size: 40px;
+        }
+    }   
+}
+
+@media screen and (min-width: 992px){
+    
+}
+
+@media screen and (min-width: 1200px){
+    .serv-seccion{
+        .serv-contenedor{
+            
+            .serv{
+                width: auto;
+                height: auto;
+              
+                .img-serv{ 
+                    width: 280px;
+                    height: 250px;
+                }
+        
+                // .nom-serv{
+                    
+                // } 
+            }
+        }
+
+        // .serv-titulo{
+            
+        // }
+    }  
+}
