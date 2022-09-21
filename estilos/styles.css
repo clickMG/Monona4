@@ -19,7 +19,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
-main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton {
+main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, .serv-contenedor .serv .serv-items .serv-boton {
   background-color: #FFC400;
   text-decoration: none;
   color: #000000;
@@ -30,7 +30,7 @@ main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .e
   font-size: 20px;
   transition: 0.5s;
 }
-main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover {
+main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, .serv-contenedor .serv .serv-items .serv-boton:hover {
   background-color: #FFF70D;
 }
 
@@ -89,6 +89,169 @@ header .navbar-brand {
   align-self: center;
 }
 
+.serv-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.serv-contenedor a {
+  text-decoration: none;
+  margin: 10px;
+}
+.serv-contenedor .serv {
+  width: 170px;
+  height: auto;
+  background-color: #ffff80;
+  border: solid 2px #252525;
+  box-shadow: 1px 1px 5px 0px #413e38;
+  overflow: hidden;
+  margin: 5px;
+}
+.serv-contenedor .serv .img-serv {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s;
+}
+.serv-contenedor .serv .img-serv:hover {
+  transform: scale(1.1);
+}
+.serv-contenedor .serv .serv-items {
+  padding: 20px;
+  /* The container */
+}
+.serv-contenedor .serv .serv-items .container {
+  display: block;
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* On mouse-over, add a grey background color */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+}
+.serv-contenedor .serv .serv-items .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.serv-contenedor .serv .serv-items .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin: auto;
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+}
+.serv-contenedor .serv .serv-items .container input:checked ~ .checkmark {
+  background-color: #252525;
+}
+.serv-contenedor .serv .serv-items .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.serv-contenedor .serv .serv-items .container .checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border: 1px solid #413e38;
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Style the checkmark/indicator */
+}
+.serv-contenedor .serv .serv-items .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.serv-contenedor .serv .serv-items .container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #FF940D;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.serv-contenedor .serv .serv-items .serv-boton {
+  padding: 3px;
+  margin-top: 15px;
+  width: 100%;
+}
+.serv-contenedor .serv .serv-items .modal {
+  top: 30%;
+}
+.serv-contenedor .serv .serv-items .modal .modal-dialog .modal-content {
+  border: 1px solid #252525;
+  border-radius: 10px;
+}
+.serv-contenedor .serv .serv-items .modal .modal-dialog .modal-content .modal-header {
+  border-bottom: 1px solid #413e38;
+}
+.serv-contenedor .serv .serv-items .modal .modal-dialog .modal-content .modal-header h5 {
+  color: #252525;
+  font-size: 30px;
+}
+.serv-contenedor .serv .serv-items .modal .modal-dialog .modal-content .modal-footer {
+  border-top: 1px solid #413e38;
+}
+.serv-contenedor .serv .serv-items .modal .modal-dialog .modal-content .modal-footer .btn {
+  background-color: #413e38;
+  color: #FFC400;
+}
+.serv-contenedor .serv .serv-items .modal .modal-dialog .modal-content .modal-footer .btn:hover {
+  background-color: #252525;
+}
+.serv-contenedor .nom-serv {
+  text-align: center;
+  background-color: #252525;
+  color: #FFC400;
+  font-family: "Glory", sans-serif;
+  padding: 5px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .serv-seccion .serv-contenedor {
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 80px;
+  }
+  .serv-seccion .serv-contenedor .serv {
+    width: auto;
+    height: auto;
+  }
+  .serv-seccion .serv-contenedor .serv:hover {
+    box-shadow: 2px 2px 15px 0px #413e38;
+  }
+  .serv-seccion .serv-contenedor .serv .img-serv {
+    height: 200px;
+  }
+  .serv-seccion .serv-contenedor .serv .nom-serv {
+    font-size: 25px;
+  }
+  .serv-seccion .serv-titulo {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .serv-seccion .serv-contenedor .serv {
+    width: auto;
+    height: auto;
+  }
+  .serv-seccion .serv-contenedor .serv .img-serv {
+    width: 280px;
+    height: 250px;
+  }
+}
 .bgImg-text-tptc {
   background-image: url("https://i.ibb.co/kXTXLt7/imagen1.jpg");
   background-position: center;
@@ -393,6 +556,9 @@ footer div p {
   background-image: url(../../IMG/perrito-nosotros.jpg);
   background-size: cover;
 }
+.nos-main .nos-sect {
+  padding-bottom: 30px;
+}
 .nos-main .nos-sect h1 {
   padding-top: 25px;
 }
@@ -405,7 +571,7 @@ footer div p {
 .nos-main .nos-sect .nos-contenedor .nos-cuadro {
   border: solid 3px #FFC400;
   margin: 10px 10px;
-  background-color: rgba(20, 20, 20, 0.815);
+  background-color: rgba(20, 20, 20, 0.856);
   min-height: 200px;
   max-width: 400px;
   display: flex;
@@ -436,6 +602,9 @@ footer div p {
 }
 
 @media screen and (min-width: 768px) {
+  .nos-main .nos-sect {
+    padding-bottom: 100px;
+  }
   .nos-main .nos-sect .nos-contenedor {
     flex-direction: row;
     justify-content: center;

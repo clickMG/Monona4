@@ -51,36 +51,264 @@
           </nav>
     </header>
     <main>
-        <section class="art-serv-seccion">
-            <h1 class="titulo art-serv-titulo">Servicios que ofrecemos</h1>
+        <section class="serv-seccion">
+            <h1 class="titulo serv-titulo">Servicios que ofrecemos</h1>
 
-            <div class="art-serv-contenedor">
-                <div class="art-serv">
-                    <h3 class="nom-art-serv">Peluquería</h3>
-                    <img src="../IMG/peluqueria.jpg" alt="" class="img-art-serv">
-                </div>
-                <div class="art-serv">
-                    <h3 class="nom-art-serv">Baño</h3>
-                    <img src="../IMG/banio.jpg" alt="" class="img-art-serv">
-                </div>
-                <div class="art-serv">
-                    <h3 class="nom-art-serv">Uñas</h3>
-                    <img src="../IMG/unias.webp" alt="" class="img-art-serv">
-                </div>
-            </div>
+            <div class="serv-contenedor">
 
-            <div class="art-serv-contenedor">
-                <div class="art-serv">
-                    <h3 class="nom-art-serv">Peinado</h3>
-                    <img src="../IMG/peinado.webp" alt="" class="img-art-serv">
+                <div class="serv">
+                    <h3 class="nom-serv">Peluquería</h3>
+
+                    <div class="serv-items">
+                        <label class="container">Perro
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Gato
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Roedor
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Reptil
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="serv-boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Sacar turno
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="">Reservá tu turno</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body"> 
+                                        <form action="">
+                                            <label for="dia-hora">Día:</label>
+                                            <input type="datetime-local" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">  
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="art-serv">
-                    <h3 class="nom-art-serv">Cuidado</h3>
-                    <img src="../IMG/cuidado.jpg" alt="" class="img-art-serv">
+
+                <div class="serv">
+                    <h3 class="nom-serv">Baño</h3>
+                    <div class="serv-items">
+                        <label class="container">Perro
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Gato
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Ave
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Reptil
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="serv-boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Sacar turno
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="">Reservá tu turno</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body"> 
+                                        <form action="">
+                                            <label for="dia-hora">Día:</label>
+                                            <input type="datetime-local" id="dia-hora" name="dia-hora">  
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="art-serv">
-                    <h3 class="nom-art-serv">Paseo</h3>
-                    <img src="../IMG/paseo.jpg" alt="" class="img-art-serv">
+
+                <div class="serv">
+                    <h3 class="nom-serv">Uñas</h3>
+                    <div class="serv-items">
+                        <label class="container">Perro
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Gato
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Ave
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Roedores
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Reptil
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="serv-boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Sacar turno
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="">Reservá tu turno</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body"> 
+                                        <form action="">
+                                            <label for="dia-hora">Día:</label>
+                                            <input type="datetime-local" id="dia-hora" name="dia-hora">  
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+               
+                <div class="serv">
+                    <h3 class="nom-serv">Cuidado</h3>
+                    <div class="serv-items">
+                        <label class="container">Perro
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Gato
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Ave
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Pez
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Roedor
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Reptil
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="serv-boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Sacar turno
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="">Reservá tu turno</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body"> 
+                                        <form action="">
+                                            <label for="dia-hora">Día:</label>
+                                            <input type="datetime-local" id="dia-hora" name="dia-hora">  
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="serv">
+                    <h3 class="nom-serv">Paseo</h3>
+                    <div class="serv-items">
+                        <label class="container">Perro
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="serv-boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Sacar turno
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="">Reservá tu turno</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body"> 
+                                        <form action="">
+                                            <label for="dia-hora">Día:</label>
+                                            <input type="datetime-local" id="dia-hora" name="dia-hora">  
+                                        </form>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

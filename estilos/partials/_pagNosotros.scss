@@ -4,6 +4,7 @@
 
 
     .nos-sect{
+        padding-bottom: 30px;
         h1{
             padding-top: 25px;
         }
@@ -17,7 +18,7 @@
             .nos-cuadro{
                 border: solid 3px $colorPpal;
                 margin: 10px 10px;
-                background-color: rgba(20, 20, 20, 0.815);
+                background-color: rgba(20, 20, 20, 0.856);
                 min-height: 200px;
                 max-width: 400px;
                 display: flex;
@@ -48,6 +49,7 @@
 @media screen and (min-width: 768px) {
     .nos-main{
         .nos-sect{
+            padding-bottom: 100px;
             .nos-contenedor{
                
                 flex-direction: row;
