@@ -89,6 +89,9 @@ header .navbar-brand {
   align-self: center;
 }
 
+main .alto {
+  height: 500px;
+}
 main .sec-serv .filtros-serv {
   display: none;
 }
@@ -108,11 +111,15 @@ main .sec-serv .filtros-serv ul li {
 main .sec-serv .filtros-serv ul li a {
   text-decoration: none;
   color: #413e38;
-  border-bottom: 1px solid transparent;
 }
 main .sec-serv .filtros-serv ul li a:hover {
   color: #252525;
   font-weight: 550;
+}
+main .sec-serv .filtros-serv ul li .categ-activa {
+  color: #FF940D;
+  -webkit-text-stroke: 0.3px #252525;
+  pointer-events: none;
 }
 main .sec-serv .filtros-serv-mov {
   position: sticky;
@@ -151,12 +158,17 @@ main .sec-serv .filtros-serv-mov .accordion-item ul li a:hover {
   color: #252525;
   font-weight: 550;
 }
+main .sec-serv .filtros-serv-mov .accordion-item ul li .categ-activa {
+  color: #FF940D;
+  -webkit-text-stroke: 0.3px #252525;
+  pointer-events: none;
+}
 main .sec-serv .cont-servs .tit-serv {
   font-family: "Glory", sans-serif;
   text-align: center;
   font-weight: bold;
   color: #FF940D;
-  font-size: 35px;
+  font-size: 26px;
   padding-top: 10px;
   text-shadow: 1.5px 1.5px #413e38;
 }
@@ -170,7 +182,7 @@ main .sec-serv .cont-servs .serv {
 }
 main .sec-serv .cont-servs .serv .img-serv {
   width: auto;
-  height: 250px;
+  height: 180px;
   padding: 15px;
 }
 main .sec-serv .cont-servs .serv .info-serv {
@@ -203,12 +215,59 @@ main .sec-serv .cont-servs .serv .info-serv .precio-serv {
   text-align: center;
   font-weight: bold;
   color: #252525;
-  font-size: 20px;
+  font-size: 15px;
   padding-top: auto;
   text-align: left;
 }
 main .sec-serv .cont-servs .serv .info-serv .descrip-serv {
   display: none;
+}
+main .sec-serv .cont-servs .serv .info-serv .btn-serv {
+  font-size: 15px;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal {
+  top: 30%;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content {
+  border: 1px solid #252525;
+  border-radius: 10px;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content .modal-header {
+  border-bottom: 1px solid #413e38;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content .modal-header h5 {
+  color: #252525;
+  font-size: 30px;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content .modal-body form {
+  display: flex;
+  flex-direction: column;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content .modal-footer {
+  border-top: 1px solid #413e38;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content .modal-footer .btn {
+  background-color: #413e38;
+  color: #FFC400;
+  border-color: #252525;
+}
+main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content .modal-footer .btn:hover {
+  background-color: #252525;
+}
+
+@media screen and (min-width: 480px) {
+  main .sec-serv .cont-servs .tit-serv {
+    font-size: 30px;
+  }
+  main .sec-serv .cont-servs .serv .img-serv {
+    height: 250px;
+  }
+  main .sec-serv .cont-servs .serv .info-serv .precio-serv {
+    font-size: 20px;
+  }
+  main .sec-serv .cont-servs .serv .info-serv .btn-serv {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   main .sec-serv {
@@ -234,18 +293,22 @@ main .sec-serv .cont-servs .serv .info-serv .descrip-serv {
   main .sec-serv .filtros-serv-mov {
     display: none;
   }
-  main .cont-servs .serv:hover {
+  main .sec-serv .cont-servs .tit-serv {
+    font-size: 35px;
+  }
+  main .sec-serv .cont-servs .serv:hover {
     border: solid 1px rgb(184, 184, 184);
   }
-  main .cont-servs .serv .info-serv .nom-serv {
+  main .sec-serv .cont-servs .serv .info-serv .nom-serv {
     font-family: "Glory", sans-serif;
     text-align: center;
     font-weight: bold;
     color: #252525;
     font-size: 20px;
     padding-top: 10px;
+    text-align: left;
   }
-  main .cont-servs .serv .info-serv .descrip-serv {
+  main .sec-serv .cont-servs .serv .info-serv .descrip-serv {
     display: block !important;
     font-family: "Glory", sans-serif;
     font-size: 15px;
@@ -255,6 +318,11 @@ main .sec-serv .cont-servs .serv .info-serv .descrip-serv {
   main .sec-serv .filtros-serv .filtros-img {
     max-width: 180px;
     align-self: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main .sec-serv .cont-servs .tit-serv {
+    font-size: 40px;
   }
 }
 .bgImg-text-tptc {

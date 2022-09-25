@@ -1,4 +1,7 @@
 main{
+    .alto{
+        height: 500px;
+    }
     .sec-serv{
 
         .filtros-serv{
@@ -17,17 +20,16 @@ main{
                         text-decoration: none;
                         color: $grisClaro;
                         
-                        border-bottom: 1px solid transparent;
-                        
                         &:hover{
-                            // color: $grisOscuro;
-                            // border-bottom: 1px solid $grisOscuro;
-                            // border-radius: 3px;
-                            // padding: 5px;
                             color: $grisOscuro;
                             font-weight:550;
                             
                         }
+                    }
+                    .categ-activa{
+                        color: $colorSec;
+                        -webkit-text-stroke: 0.3px $grisOscuro;
+                        pointer-events: none;
                     }
                 }
             }
@@ -73,6 +75,12 @@ main{
                                 font-weight:550;
                             }
                         }
+
+                        .categ-activa{
+                            color: $colorSec;
+                            -webkit-text-stroke: 0.3px $grisOscuro;
+                            pointer-events: none;
+                        }
                     }
                 }
             }  
@@ -81,7 +89,7 @@ main{
         .cont-servs{
 
             .tit-serv {
-                 @include titulos($color: $colorSec, $tamanio: 35px, $padTop: 10px);
+                 @include titulos($color: $colorSec, $tamanio: 26px, $padTop: 10px);
                 text-shadow: 1.5px 1.5px $grisClaro;
             }
             
@@ -94,9 +102,11 @@ main{
                 border: solid 1px transparent;
 
                 .img-serv{
+                    
                     width: auto;
-                    height: 250px;
+                    height: 180px;
                     padding: 15px;
+
                 }
 
                 .info-serv{
@@ -118,7 +128,7 @@ main{
                     
                     }
                     .precio-serv{
-                        @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: auto);
+                        @include titulos($color: $grisOscuro, $tamanio: 15px, $padTop: auto);
                         text-align: left;
                     }
                     .descrip-serv{
@@ -127,6 +137,47 @@ main{
                     }
                     .btn-serv{
                         @extend %botonPpal;
+                        font-size: 15px;
+                        
+                    }
+
+                    .modal{
+                        top: 30%;
+                        .modal-dialog{
+                            .modal-content{
+                                border: 1px solid $grisOscuro;
+                                border-radius: 10px;
+
+                                .modal-header{
+                                    border-bottom: 1px solid $grisClaro;
+                                    h5{
+                                        color: $grisOscuro;
+                                        font-size: 30px;
+                                    }
+                                }
+                                .modal-body{
+                                    form{
+                                        display: flex;
+                                        flex-direction: column;
+                                        .campos-reserva-serv{
+                                            
+                                        }
+                                    }
+                                }
+
+                                .modal-footer{
+                                    border-top: 1px solid $grisClaro;
+                                    .btn{
+                                        background-color: $grisClaro;
+                                        color: $colorPpal;
+                                        border-color: $grisOscuro;
+                                        &:hover{
+                                            background-color: $grisOscuro;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -135,6 +186,130 @@ main{
 }
 
 //-----------------------------------------@media---------------------------------------------
+@media screen and (min-width: 480px){
+    main{
+        .sec-serv{
+            .filtros-serv{
+                .categ-serv{
+                  
+                }
+    
+                ul{
+                    li{
+                        a{
+                            
+                            
+                            &:hover{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .filtros-serv-mov{
+              
+                .accordion-item{
+                    
+                    .accordion-header{
+                        
+                        .accordion-button{
+                            
+                            &:not(.collapsed){
+                               
+                                &::after{
+                                    
+                                }
+                            }
+                            // &:not(.collapsed)::after{
+                            //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                            // }
+                            &:focus{
+                               
+                            }
+                        }
+                    }
+        
+                    ul{
+                        li{
+                            
+                            a{
+                                
+                                &:hover{
+                                   
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+    
+            .cont-servs{
+    
+                .tit-serv {
+                    font-size: 30px;
+                }
+                
+                .serv{
+                    .img-serv{
+                        height: 250px;
+                    }
+    
+                    .info-serv{
+                        
+                        .nota-serv{
+
+                        }
+                        .nom-serv{
+                            
+                        }
+                        .precio-serv{
+                            // @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: auto);
+                            // text-align: left;
+                            font-size: 20px;
+                        }
+                        .descrip-serv{
+                         
+                        }
+                        .btn-serv{
+                            font-size: 20px;
+                        }
+    
+                        .modal{
+                            .modal-dialog{
+                                .modal-content{
+                                    .modal-header{
+                                    
+                                        h5{
+                                            
+                                        }
+                                    }
+                                    .modal-body{
+                                        form{
+                                            .fecha-hora{
+
+                                            }
+                                        }
+                                    }
+    
+                                    .modal-footer{
+                                      
+                                        .btn{
+                                            &:hover{
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 768px){
     main{
         .sec-serv{
@@ -161,61 +336,64 @@ main{
                 ul{
                     position: sticky;
                     top: 150px;
-                    li{
+                    // li{
                         
-                        a{
+                    //     a{
                             
-                            &:hover{
+                    //         &:hover{
                                 
-                            }
-                        }
-                    }
+                    //         }
+                    //     }
+                    // }
                 }
             }
 
             .filtros-serv-mov{
                 display: none;
             }
-        }
-        .cont-servs{
 
-            .tit-serv {
-                
-            }
+            .cont-servs{
 
-            .serv{
-        
-                &:hover{
-                    border: solid 1px rgb(184, 184, 184);
-                    
+                .tit-serv {
+                    font-size: 35px;
                 }
-                .img-serv{
-                    
-                }
-                .info-serv{
-
-                    .nota-serv{
-        
-                    }
-                    .nom-serv{
-                        @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: 10px);
-                    }
-                    .precio-serv{
-                    
-                    }
-                    .descrip-serv{
-                        display: block !important;
+    
+                .serv{
+            
+                    &:hover{
+                        border: solid 1px rgb(184, 184, 184);
                         
-                        font-family: $fuentePpal;
-                        font-size: 15px;
-                    
                     }
-                    .btn-serv{
-                    
+                    // .img-serv{
+                        
+                    // }
+                    .info-serv{
+    
+                        // .nota-serv{
+            
+                        // }
+                        .nom-serv{
+                            @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: 10px);
+                            text-align: left;
+                        }
+                        // .precio-serv{
+                        
+                        // }
+                        .descrip-serv{
+                            display: block !important;
+                            
+                            font-family: $fuentePpal;
+                            font-size: 15px;
+                        
+                        }
+                        // .btn-serv{
+                        
+                        // }
                     }
                 }
             }
         }
+        
     }    
 }
 
@@ -225,20 +403,110 @@ main{
             
             .filtros-serv{
          
-                .categ-serv{
+                // .categ-serv{
                    
-                }
+                // }
 
                 .filtros-img{
                     max-width: 180px;
                     align-self: center;
                 }
     
-                ul{
+                // ul{
                     
-                    li{
+                //     li{
                         
+                //         a{
+                            
+                //             &:hover{
+                                
+                //             }
+                //         }
+                //     }
+                // }
+            }
+
+            // .filtros-serv-mov{
+                
+            // }
+
+            // .cont-servs{
+        //     .serv{
+        //         &:hover{
+                     
+        //         }
+        //         .img-serv{
+                    
+        //         }
+        //         .info-serv{
+                
+        //             .nota-serv{
+        
+        //             }
+        //             .nom-serv{
+                        
+        //             }
+        //             .precio-serv{
+                    
+        //             }
+        //             .descrip-serv{
+                      
+                    
+        //             }
+        //             .btn-serv{
+                    
+        //             }
+                    // .modal{
+                       
+                    //     .modal-dialog{
+                    //         .modal-content{
+                               
+                    //             .modal-header{
+                                  
+                    //                 h5{
+                                        
+                    //                 }
+                    //             }
+                    //             .modal-body{
+                    //                 form{
+                    //                     .fecha-hora{
+                                           
+                    //                     }
+                    //                 }
+                    //             }
+
+                    //             .modal-footer{
+                                   
+                    //                 .btn{
+                                       
+                    //                     &:hover{
+                                            
+                    //                     }
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+        //         }
+        //     }
+        // }
+        }
+        
+    }    
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        .sec-serv{
+            .filtros-serv{
+                .categ-serv{
+                  
+                }
+    
+                ul{
+                    li{
                         a{
+                            
                             
                             &:hover{
                                 
@@ -247,45 +515,104 @@ main{
                     }
                 }
             }
-
+    
             .filtros-serv-mov{
-                
-            }
-        }
-        .cont-servs{
-            .serv{
-        
-                &:hover{
+              
+                .accordion-item{
                     
-                    
-                }
-                .img-serv{
-                    
-                }
-                .info-serv{
-                
-                    .nota-serv{
-        
+                    .accordion-header{
+                        
+                        .accordion-button{
+                            
+                            &:not(.collapsed){
+                               
+                                &::after{
+                                    
+                                }
+                            }
+                            // &:not(.collapsed)::after{
+                            //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                            // }
+                            &:focus{
+                               
+                            }
+                        }
                     }
-                    .nom-serv{
+        
+                    ul{
+                        li{
+                            
+                            a{
+                                
+                                &:hover{
+                                   
+                                }
+                            }
+                        }
+                    }
+                }  
+            }
+    
+            .cont-servs{
+    
+                .tit-serv {
+                    font-size: 40px;
+                }
+                
+                .serv{
+                    .img-serv{
                         
                     }
-                    .precio-serv{
-                    
-                    }
-                    .descrip-serv{
-                      
-                    
-                    }
-                    .btn-serv{
-                    
+    
+                    .info-serv{
+                        
+                        .nota-serv{
+
+                        }
+                        .nom-serv{
+                            
+                        }
+                        .precio-serv{
+                            
+                        }
+                        .descrip-serv{
+                         
+                        }
+                        .btn-serv{
+                            
+                        }
+    
+                        .modal{
+                            .modal-dialog{
+                                .modal-content{
+                                    .modal-header{
+                                    
+                                        h5{
+                                            
+                                        }
+                                    }
+                                    .modal-body{
+                                        form{
+                                            .fecha-hora{
+
+                                            }
+                                        }
+                                    }
+    
+                                    .modal-footer{
+                                      
+                                        .btn{
+                                            &:hover{
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-    }    
-}
-
-@media screen and (min-width: 1200px){
-    
+    }
 }

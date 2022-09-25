@@ -57,10 +57,10 @@
                 <h5 class="categ-serv">Categorías</h5>
                 <ul>
                     <li><a href="../servicios/servicios-peluqueria.html">Peluquería</a></li>
-                    <li><a href="">Baño</a></li>
-                    <li><a href="">Uñas</a></li>
-                    <li><a href="">Cuidado</a></li>
-                    <li><a href="">Paseos</a></li>         
+                    <li><a href="../servicios/servicios-banio.html">Baño</a></li>
+                    <li><a href="../servicios/servicios-unias.html">Uñas</a></li>
+                    <li><a href="../servicios/servicios-cuidado.html">Cuidado</a></li>
+                    <li><a href="../servicios/servicios-paseo.html">Paseos</a></li>         
                 </ul>
             </div>
 
@@ -71,14 +71,14 @@
                                 Categorías
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <ul>
-                                    <li><a href="">Peluquería</a></li>
-                                    <li><a href="">Baño</a></li>
-                                    <li><a href="">Uñas</a></li>
-                                    <li><a href="">Cuidado</a></li>
-                                    <li><a href="">Paseos</a></li>
+                                    <li><a href="../servicios/servicios-peluqueria.html">Peluquería</a></li>
+                                    <li><a href="../servicios/servicios-banio.html">Baño</a></li>
+                                    <li><a href="../servicios/servicios-unias.html">Uñas</a></li>
+                                    <li><a href="../servicios/servicios-cuidado.html">Cuidado</a></li>
+                                    <li><a href="../servicios/servicios-paseo.html">Paseos</a></li>         
                                 </ul>
                             </div>
                         </div>
@@ -86,139 +86,489 @@
             </div>
 
             <div class="cont-servs">
-                <h2 class="titulo">Servicios que ofrecemos</h2>
-                <div class="serv">
-                    <img src="../IMG/servicios/peluquería-perro.jpg" alt="" class="img-serv">
-                    <div class="info-serv">
-                        <!-- <p class="nota-serv">OFERTA</p> -->
-                        <h3 class="nom-serv">Peluquería para perros</h3>
-                        <p class="precio-serv">$2000</p>
-                        <p class="descrip-serv">
-                            Dejamos a tu mascota como nueva, no 
-                            solo cortamos el pelo, tambien tratamos y cuidamos su piel con 
-                            nuestros tratamientos personalizados. El servicio completo incluye
-                            corte, aplicación de productos para piel y pelo y peinado.
-                        </p>
+                <h2 class="tit-serv">Servicios que ofrecemos</h2>
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn-serv" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Sacar turno
-                        </button>
-                            
-                            <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="serv">
+                    <img src="../IMG/servicios/cuidado-peces.jpg" alt="" class="img-serv">
+                    <div class="info-serv">
+                        <h3 class="nom-serv">Guardería para peces</h3>
+                        <p class="precio-serv">$1500 (precio por día)</p>
+                        <p class="descrip-serv">
+                          Puede parecer que los peces no necesitan de demasiados cuidados, pero
+                          alguien se tiene que encargar de ellos en tu ausencia. Nosotros 
+                          cuidamos a tus peces para que te vayas tranquilo de viaje. Contamos con peceras 
+                          de diferentes tamaños adaptadas para que tu peces estén cómodos y a 
+                          gusto en nuestras instalaciones. 
+                          El precio incluye dos comidas al día. 
+                        </p>
+      
+                        <!-- RESERVAR-->
+                        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                             <div class="modal-dialog">
-                                <div class="modal-content">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <label for="dia-hora">Desde</label>
+                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
+                                        <label for="dia-hora">Hasta</label>
+                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Tu turno quedó reservado
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+      
+                      </div>
+                    </div>
+
+                    <div class="serv">
+                        <img src="../IMG/servicios/peluqueria-roedores.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Peluquería para roedores</h3>
+                            <p class="precio-serv">$2450</p>
+                            <p class="descrip-serv">
+                                Como sucede con perros y otras mascotas, los roedores tambien necesitan de cuidados 
+                                mínimos de aseo. En su habitat natural, suelen encargarse de esto ellos mismos, pero
+                                en su vida adaptada al hogar muchas veces se les dificulta
+                            </p>
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="">Reservá tu turno</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-    
-                                    <div class="modal-body"> 
+                                    <div class="modal-body">
                                         <form action="">
-                                            <label for="dia-hora">Día:</label>
+                                            <label for="dia-hora">Fecha y hora:</label>
                                             <input type="datetime-local" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">  
                                         </form>
                                     </div>
-    
                                     <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                                     </div>
-                                        
+                                  </div>
                                 </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="serv">
-                    <img src="../IMG/servicios/peluquería-gato.jpg" alt="" class="img-serv">
-                    <div class="info-serv">
-                        <h3 class="nom-serv">Peluquería para gatos</h3>
-                        <p class="precio-serv">$2450</p>
-                        <p class="descrip-serv">
-                            Los gatos son mucho más nerviosos que los perros y se estresan con gran facilidad,
-                            por lo que el cuidado de su pelo suele ser una tarea dificil. Nosotros contamos con las herramientas y
-                            productos adecuados para esta misión, y lo más importante, personal capacitado y cualificado,
-                            el cual siempre pone por delante el bienestar del animal y su seguridad
-                        </p>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn-serv" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Sacar turno
-                        </button>
-                            
-                            <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="">Reservá tu turno</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
     
-                                    <div class="modal-body"> 
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <img src="../IMG/servicios/unias-gato.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Cortado de uñas para gatos</h3>
+                            <p class="precio-serv">$1200</p>
+                            <p class="descrip-serv">
+                                Al igual que los perros, los gatos, por cuestiones de salud, también necesitan cortarse sus
+                                uñas regularmente. Es un trabajo que requiere paciencia y buen pulso
+                            </p>
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
                                         <form action="">
-                                            <label for="dia-hora">Día:</label>
+                                            <label for="dia-hora">Fecha y hora:</label>
                                             <input type="datetime-local" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">  
                                         </form>
                                     </div>
-    
                                     <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                                     </div>
-                                        
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+    
+    
                         </div>
                     </div>
-                </div>
 
-                <div class="serv">
-                    <img src="../IMG/servicios/peluqueria-roedores.jpg" alt="" class="img-serv">
-                    <div class="info-serv">
-                        <h3 class="nom-serv">Peluquería para roedores</h3>
-                        <p class="precio-serv">$2450</p>
-                        <p class="descrip-serv">
-                            Como sucede con perros y otras mascotas, los roedores tambien necesitan de cuidados 
-                            mínimos de aseo. En su habitat natural, suelen encargarse de esto ellos mismos, pero
-                            en su vida adaptada al hogar muchas veces se les dificulta
-                        </p>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn-serv" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Sacar turno
-                        </button>
-                            
-                            <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
+                    <div class="serv">
+                        <img src="../IMG/servicios/cuidado-gatos.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Guardería para gatos</h3>
+                            <p class="precio-serv">$3000 (precio por día)</p>
+                            <p class="descrip-serv">
+                              Cuidamos a tu gato para que te vayas tranquilo de viaje. Contamos con espacios 
+                              adaptados para que tu gato está cómodo y a gusto en nuestras instalaciones. 
+                              El precio incluye dos comidas al día. 
+                            </p>
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="">Reservá tu turno</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-    
-                                    <div class="modal-body"> 
+                                    <div class="modal-body">
                                         <form action="">
-                                            <label for="dia-hora">Día:</label>
+                                            <label for="dia-hora">Desde</label>
+                                            <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
+                                            <label for="dia-hora">Hasta</label>
+                                            <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+    
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <img src="../IMG/servicios/unias-perro.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Cortado de uñas para perros</h3>
+                            <p class="precio-serv">$1000</p>
+                            <p class="descrip-serv">
+                              La importancia del corte de uñas en un perro radica en prevenir roturas, 
+                              crecimiento excesivo, sangrado, mal olor,
+                              infecciones bacterianas o hongos
+                            </p>
+    
+                           <!-- RESERVAR-->
+                           <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="">
+                                        <label for="dia-hora">Fecha y hora:</label>
+                                        <input type="datetime-local" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">  
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  Tu turno quedó reservado
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+    
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <img src="../IMG/servicios/cuidado-reptiles.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Guardería para reptiles</h3>
+                            <p class="precio-serv">$1800 (precio por día)</p>
+                            <p class="descrip-serv">
+                              Cuidamos a tu reptil para que te vayas tranquilo de viaje. Contamos con espacios 
+                              adaptados para que tu tortuga, iguana o cualquier reptil está cómodo y a gusto en nuestras instalaciones. 
+                              El precio incluye dos comidas al día. 
+                            </p>
+      
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <label for="dia-hora">Desde</label>
+                                            <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
+                                            <label for="dia-hora">Hasta</label>
+                                            <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+      
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <img src="../IMG/servicios/peluquería-perro.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Peluquería para perros</h3>
+                            <p class="precio-serv">$2000</p>
+                            <p class="descrip-serv">
+                                Cambiá el look de tu perro, de forma segura y saludable, ya que no 
+                                solo cortamos el pelo, tambien tratamos y cuidamos su piel con 
+                                nuestros tratamientos personalizados. El servicio completo incluye
+                                corte, aplicación de productos para piel y pelo y peinado.
+                            </p>
+    
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <label for="dia-hora">Fecha y hora:</label>
                                             <input type="datetime-local" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">  
                                         </form>
                                     </div>
-    
                                     <div class="modal-footer">
-                                        <button type="button" class="btn" data-bs-dismiss="modal">Reservar</button>    
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                                     </div>
-                                        
+                                  </div>
                                 </div>
-                            </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+    
                         </div>
                     </div>
-                </div>
 
+                    <div class="serv">
+                        <img src="../IMG/servicios/banio-gato.jpg" alt="" class="img-serv">
+                        <div class="info-serv">
+                            <h3 class="nom-serv">Quiero bañar a mi gato</h3>
+                            <p class="precio-serv">$2450</p>
+                            <p class="descrip-serv">
+                                Bañar a un gato, por lo general, no suele ser tarea fácil, sin embargo, 
+                                es muy necesario.
+                                Dejá que nosotros nos ocupemos de ello con profesionales que están altamente
+                                capacitados para esa labor
+                            </p>
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <label for="dia-hora">Fecha y hora:</label>
+                                            <input type="datetime-local" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">  
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+                              <!-- FIN RESERVAR-->
+    
+                        </div>
+                    </div>
+
+                    <div class="serv">
+                        <img src="../IMG/servicios/cuidado-perros.jpg" alt="" class="img-serv">
+                      <div class="info-serv">
+                            <h3 class="nom-serv">Guardería para perros</h3>
+                            <p class="precio-serv">$3000 (precio por día)</p>
+                            <p class="descrip-serv">
+                               Cuidamos a tu perro para que te vayas tranquilo de viaje. Contamos con espacios 
+                               adaptados para que tu perro está cómodo y a gusto en nuestras instalaciones. 
+                               El precio incluye dos comidas al día. 
+                            </p>
+    
+                            <!-- RESERVAR-->
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <label for="dia-hora">Desde</label>
+                                            <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
+                                            <label for="dia-hora">Hasta</label>
+                                            <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      Tu turno quedó reservado
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
+    
+                        </div>
+                      </div>
+                
+               
 
             </div>
-
-            
         </section>
     </main>
     
@@ -232,7 +582,7 @@
         </div>
         
         <div class="text-center p-3">
-            <p class="pie-nombre fte-ppal">Monona - Tienda online para caninos</p>
+            <p class="pie-nombre fte-ppal">Monona - Tienda online para mascotas</p>
             <p class="pie-dir fte-ppal">Dir: Rivadavia 123, Santa Rosa, La Pampa / Tel: 1122334455 / E-mail: info@monona.com</p>
         </div>
   </footer>
