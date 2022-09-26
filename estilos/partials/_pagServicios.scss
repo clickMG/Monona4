@@ -142,8 +142,10 @@ main{
                     }
 
                     .modal{
+                        
                         top: 30%;
                         .modal-dialog{
+                           
                             .modal-content{
                                 border: 1px solid $grisOscuro;
                                 border-radius: 10px;
@@ -159,8 +161,15 @@ main{
                                     form{
                                         display: flex;
                                         flex-direction: column;
-                                        .campos-reserva-serv{
-                                            
+                                        
+                                        input{
+                                            margin: 5px;
+                                        }
+
+                                        div{
+                                            display: flex;
+                                            flex-direction: row;
+                                            align-items: center;
                                         }
                                     }
                                 }

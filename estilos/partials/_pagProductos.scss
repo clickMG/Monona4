@@ -29,6 +29,11 @@ main{
                             
                         }
                     }
+                    .categ-activa{
+                        color: $colorSec;
+                        -webkit-text-stroke: 0.3px $grisOscuro;
+                        pointer-events: none;
+                    }
                 }
             }
         }
@@ -72,6 +77,12 @@ main{
                                 color: $grisOscuro;
                                 font-weight:550;
                             }
+                        }
+
+                        .categ-activa{
+                            color: $colorSec;
+                            -webkit-text-stroke: 0.3px $grisOscuro;
+                            pointer-events: none;
                         }
                     }
                 }

@@ -108,12 +108,25 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="">
-                                        <label for="dia-hora">Desde</label>
-                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
-                                        <label for="dia-hora">Hasta</label>
-                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
-                                    </form>
+
+                                  <form action="">
+                                    <label for="">Nombre</label>
+                                    <input type="text" class="campos-reserva-serv">
+
+                                    <label for="">Tel</label>
+                                    <input type="number">
+
+                                    <label for="">E-mail</label>
+                                    <input type="email">
+
+                                    <div>
+                                      <label for="dia-hora">Desde</label>
+                                      <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
+                                      <label for="dia-hora">Hasta</label>
+                                      <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
+                                    </div>
+                                  </form>
+                                    
                                 </div>
                                 <div class="modal-footer">
                                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
@@ -156,40 +169,14 @@
                         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                             <div class="modal-dialog">
                               <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <label for="dia-hora">Desde</label>
-                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
-                                        <label for="dia-hora">Hasta</label>
-                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
-                                    </form>
-                                </div>
+                               
                                 <div class="modal-footer">
                                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  Tu turno quedó reservado
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                         
                           <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
 
                     </div>
@@ -209,40 +196,14 @@
                         <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                             <div class="modal-dialog">
                               <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="">
-                                        <label for="dia-hora">Desde</label>
-                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
-                                        <label for="dia-hora">Hasta</label>
-                                        <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
-                                    </form>
-                                </div>
+                                
                                 <div class="modal-footer">
                                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                  Tu turno quedó reservado
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                         
                           <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
 
                     </div>
@@ -263,40 +224,14 @@
                       <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                           <div class="modal-dialog">
                             <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                  <form action="">
-                                      <label for="dia-hora">Desde</label>
-                                      <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
-                                      <label for="dia-hora">Hasta</label>
-                                      <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
-                                  </form>
-                              </div>
+                             
                               <div class="modal-footer">
                                 <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Tu turno quedó reservado
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        
                         <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
 
                   </div>
@@ -317,40 +252,14 @@
                     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog">
                           <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="">
-                                    <label for="dia-hora">Desde</label>
-                                    <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
-                                    <label for="dia-hora">Hasta</label>
-                                    <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
-                                </form>
-                            </div>
+                           
                             <div class="modal-footer">
                               <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              Tu turno quedó reservado
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                 
                       <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
 
                 </div>
@@ -373,40 +282,14 @@
                   <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                       <div class="modal-dialog">
                         <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalToggleLabel">Reservá tu turno</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                              <form action="">
-                                  <label for="dia-hora">Desde</label>
-                                  <input type="datetime-local" class="fecha-hora" min="2022-09-20 08:00" max="2030-01-01 18:00" id="dia-hora" name="dia-hora"> <br>
-                                  <label for="dia-hora">Hasta</label>
-                                  <input type="datetime-local" class="fecha-hora" min="2022-09-20 10:00" max="2030-01-01 10:00" id="dia-hora" name="dia-hora">   
-                              </form>
-                          </div>
+                          
                           <div class="modal-footer">
                             <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Reservar</button>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalToggleLabel2">¡Perfecto!</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            Tu turno quedó reservado
-                          </div>
-                          <div class="modal-footer">
-                              <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  
                     <a class="btn btn-primary btn-serv" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sacar turno</a>
 
                 </div>
