@@ -226,7 +226,7 @@ main .sec-serv .cont-servs .serv .info-serv .btn-serv {
   font-size: 15px;
 }
 main .sec-serv .cont-servs .serv .info-serv .modal {
-  top: 30%;
+  top: 10%;
 }
 main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content {
   border: 1px solid #252525;

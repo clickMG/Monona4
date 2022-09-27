@@ -58,6 +58,7 @@
             
             <div class="cont-carrito">
                 <h2 class="tit-carrito">Carrito</h2>
+                
                 <div class="carrito">
                     <img src="../IMG/productos/alimento-perro-pedigree.png" alt="" class="img-carrito">
                     
@@ -97,9 +98,79 @@
                         </div>
                     </div>
                 </div>
-                <div class="cont-boton">
-                    <button class="btn-compra">Realizar compra</button>
-                </div>
+                <!-- RESERVAR-->
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel">Datos para realizar la compra</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <fieldset>
+                                    <legend>Datos de contacto</legend>
+
+                                    <input type="text" placeholder="Nombre" class="campos-reserva-serv">
+                                    <input type="text" placeholder="Apellido" class="campos-reserva-serv">
+                                    <input type="number" placeholder="Teléfono">
+                                    <input type="email" placeholder="E-mail">
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Dirección del pedido</legend>
+
+                                    <input type="text" placeholder="Calle">
+                                    <input type="number" placeholder="Número">
+                                    <input type="text" placeholder="Piso">
+                                    <input type="text" placeholder="Depto">
+                                    <input type="text" placeholder="Provincia">
+                                    <input type="text" placeholder="Ciudad">
+                                    <input type="number" placeholder="CP">
+
+                                </fieldset>
+
+                                <fieldset>
+                                    <legend>Información de pago</legend>
+
+                                    <input type="text" placeholder="Titular de la tarjeta">
+                                    <input type="number" placeholder="Número de la terjeta">
+                                    <label for="dia-hora">Fecha de expiración</label>
+                                    <input type="date" id="dia-hora" name="dia-hora">  
+                                    <input type="number" placeholder="Código de seguridad">
+                                    <input type="number" placeholder="DNI del titular de la tarjeta">
+                                </fieldset>
+                        
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirmar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalToggleLabel2">¡Muchas gracias por tu compra!</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          El pago se realizó correctamente. En tres días hábiles tu pedido estará llegando.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="cont-boton">
+                        <a class="btn btn-primary btn-compra" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Realizar pedido</a>
+                    </div>
+                  <!-- FIN RESERVAR-->
             </div>
         </section>
     </main>
