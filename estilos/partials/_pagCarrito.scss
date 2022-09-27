@@ -73,6 +73,33 @@ main{
                 width: 100%;
             }
 
+            .modal{
+                
+                .modal-dialog{
+                    
+                    .modal-content{
+                        .modal-header{
+                            h5{
+                                
+                            }
+                        }
+                        
+                        .modal-body{
+                           
+                            form{
+                                
+                                fieldset{
+                                    input{
+                                        margin: 5px;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             .cont-boton{
                 display: flex;
                 flex-direction: row;
@@ -80,7 +107,8 @@ main{
                 justify-content: end;
                 margin: 0 11%;
                 padding: 15px;
-                .btn-compra{
+
+                .btn-primary{
                     @extend %botonPpal;
                    
                 }
@@ -88,28 +116,28 @@ main{
         }
     }
 
-    .sect-pago{
-        margin: 0 180px;
+    // .sect-pago{
+    //     margin: 0 180px;
         
-       .total{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: end;
+    //    .total{
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: end;
         
         
-        p{
-            @include titulos($color: $grisOscuro, $tamanio: 30px, $padTop: auto);
-            padding: 50px;
-        }
-       }
-       .pedido{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: end;
-       }
-    }
+    //     p{
+    //         @include titulos($color: $grisOscuro, $tamanio: 30px, $padTop: auto);
+    //         padding: 50px;
+    //     }
+    //    }
+    //    .pedido{
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-items: center;
+    //     justify-content: end;
+    //    }
+    // }
 }
 
 //-----------------------------------------@media---------------------------------------------
@@ -164,16 +192,11 @@ main{
                                 margin-top: revert;
                                     
                             }  
-                        }
-    
-                        
+                        } 
                     }
                 }
-
             }
-            
         }
-      
     }    
 }
 

@@ -19,7 +19,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
-main .sec-carrito .cont-carrito .cont-boton .btn-compra, main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, main .sec-serv .cont-servs .serv .info-serv .btn-serv {
+main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, main .sec-serv .cont-servs .serv .info-serv .btn-serv {
   background-color: #FFC400;
   text-decoration: none;
   color: #000000;
@@ -30,7 +30,7 @@ main .sec-carrito .cont-carrito .cont-boton .btn-compra, main .sec-prod .cont-pr
   font-size: 20px;
   transition: 0.5s;
 }
-main .sec-carrito .cont-carrito .cont-boton .btn-compra:hover, main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, main .sec-serv .cont-servs .serv .info-serv .btn-serv:hover {
+main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, main .sec-serv .cont-servs .serv .info-serv .btn-serv:hover {
   background-color: #FFF70D;
 }
 
@@ -226,7 +226,7 @@ main .sec-serv .cont-servs .serv .info-serv .btn-serv {
   font-size: 15px;
 }
 main .sec-serv .cont-servs .serv .info-serv .modal {
-  top: 30%;
+  top: 10%;
 }
 main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content {
   border: 1px solid #252525;
@@ -1021,38 +1021,6 @@ main .sec-carrito .cont-carrito .carrito .total .precio-total {
 }
 main .sec-carrito .cont-carrito .cont-total {
   width: 100%;
-}
-main .sec-carrito .cont-carrito .cont-boton {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  margin: 0 11%;
-  padding: 15px;
-}
-main .sect-pago {
-  margin: 0 180px;
-}
-main .sect-pago .total {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-}
-main .sect-pago .total p {
-  font-family: "Glory", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  color: #252525;
-  font-size: 30px;
-  padding-top: auto;
-  padding: 50px;
-}
-main .sect-pago .pedido {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
 }
 
 @media screen and (min-width: 768px) {
