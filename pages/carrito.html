@@ -23,7 +23,7 @@
               </button>
               <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header">
-                    <button type="button" class="botonCerrar" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                  <button type="button" class="botonCerrar" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                 </div>
                 <div class="offcanvas-body">
                   <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">Productos</a>
+                      <a class="nav-link" href="./productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./servicios.html">Servicios</a>
@@ -43,7 +43,7 @@
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart"></i></a>
+                      <a class="nav-link actual" href="#"><i class="bi bi-cart"></i></a>
                     </li>
                     
                   </ul>
@@ -54,123 +54,112 @@
           </nav>
     </header>
     <main>
-        <section class="sec-carrito">
-            
-            <div class="cont-carrito">
-                <h2 class="tit-carrito">Carrito</h2>
-                
-                <div class="carrito">
-                    <img src="../IMG/productos/alimento-perro-pedigree.png" alt="" class="img-carrito">
+        <section class="sect-carr">
+            <h1 class="tit-carr">Carrito de compras</h1>
+
+            <div class="cont-item-carr">
+                <div class="cont-img-carr">
+                    <img src="../IMG/productos/perros/alimento-perro-proplan.png" alt="" class="img-carr">
+                </div>
+                 
+                <div class="prod-cant-carr">
+                    <p class="prod-carr">Alimento para perro adulto</p>
                     
-                    <div class="info-carrito">
-                        <div class="prod-precio">
-                            <h3 class="nom-carrito">Alimento para cachorros</h3>
-                            <div class="cant">
-                                <label for="">Cantidad</label>
-                                <input class="cant-num" type="number" min="1" value="1">
-                            </div>
-                            <p class="precio-carrito">$2499</p>
-                        </div>
-                    </div>
+                    <label for="">Cantidad</label>
+                    <select name="" id="" class="cant-carr">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidad</option>
+                        <option value="3">3 unidad</option>
+                        <option value="4">4 unidad</option>
+                        <option value="5">5 unidad</option>
+                        <option value="6">6 unidad</option>
+                        <option value="7">7 unidad</option>
+                        <option value="8">8 unidad</option>
+                        <option value="9">9 unidad</option>
+                        <option value="10">10 unidad</option>
+                    </select>
                 </div>
-
-                <div class="carrito">
-                    <img src="../IMG/productos/alimento-perro-pedigree.png" alt="" class="img-carrito">
-                    <div class="info-carrito">
-                        
-                        <div class="prod-precio">
-                            <h3 class="nom-carrito">Alimento para cachorros</h3>
-                            <div class="cant">
-                                <label for="">Cantidad</label>
-                                <input class="cant-num" type="number" min="1" value="1">
-                            </div>
-                            <p class="precio-carrito">$2499</p>
-                        </div>
-                    </div>
+                
+                <div class="cont-precio-carr">
+                    <p class="precio-carr">$2000</p>
                 </div>
+            </div>
 
-                <div class="carrito cont-total">
-                    <div class="info-carrito total">
-                        <div class="prod-precio precio-total">
-                            <h3 class="nom-carrito">Total de la compra</h3>
-                           
-                            <p class="precio-carrito">$2499</p>
-                        </div>
-                    </div>
+            <div class="linea"></div>
+
+            <div class="cont-item-carr">
+                <div class="cont-img-carr">
+                    <img src="../IMG/productos/perros/alimento-perro-proplan.png" alt="" class="img-carr">
                 </div>
-                <!-- RESERVAR-->
-                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalToggleLabel">Datos para realizar la compra</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="">
-                                <fieldset>
-                                    <legend>Datos de contacto</legend>
+                 
+                <div class="prod-cant-carr">
+                    <p class="prod-carr">Alimento para perro adulto</p>
+                    
+                    <label for="">Cantidad</label>
+                    <select name="" id="" class="cant-carr">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidad</option>
+                        <option value="3">3 unidad</option>
+                        <option value="4">4 unidad</option>
+                        <option value="5">5 unidad</option>
+                        <option value="6">6 unidad</option>
+                        <option value="7">7 unidad</option>
+                        <option value="8">8 unidad</option>
+                        <option value="9">9 unidad</option>
+                        <option value="10">10 unidad</option>
+                    </select>
+                </div>
+                
+                <div class="cont-precio-carr">
+                    <p class="precio-carr">$2000</p>
+                </div>
+            </div>
 
-                                    <input type="text" placeholder="Nombre" class="campos-reserva-serv">
-                                    <input type="text" placeholder="Apellido" class="campos-reserva-serv">
-                                    <input type="number" placeholder="Teléfono">
-                                    <input type="email" placeholder="E-mail">
-                                </fieldset>
+            <div class="linea"></div>
 
-                                <fieldset>
-                                    <legend>Dirección del pedido</legend>
+            <div class="cont-item-carr">
+                <div class="cont-img-carr">
+                    <img src="../IMG/productos/perros/alimento-perro-proplan.png" alt="" class="img-carr">
+                </div>
+                 
+                <div class="prod-cant-carr">
+                    <p class="prod-carr">Alimento para perro adulto</p>
+                    
+                    <label for="">Cantidad</label>
+                    <select name="" id="" class="cant-carr">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidad</option>
+                        <option value="3">3 unidad</option>
+                        <option value="4">4 unidad</option>
+                        <option value="5">5 unidad</option>
+                        <option value="6">6 unidad</option>
+                        <option value="7">7 unidad</option>
+                        <option value="8">8 unidad</option>
+                        <option value="9">9 unidad</option>
+                        <option value="10">10 unidad</option>
+                    </select>
+                </div>
+                
+                <div class="cont-precio-carr">
+                    <p class="precio-carr">$2000</p>
+                </div>
+            </div>
 
-                                    <input type="text" placeholder="Calle">
-                                    <input type="number" placeholder="Número">
-                                    <input type="text" placeholder="Piso">
-                                    <input type="text" placeholder="Depto">
-                                    <input type="text" placeholder="Provincia">
-                                    <input type="text" placeholder="Ciudad">
-                                    <input type="number" placeholder="CP">
+            <div class="linea"></div>
+        </section>
 
-                                </fieldset>
-
-                                <fieldset>
-                                    <legend>Información de pago</legend>
-
-                                    <input type="text" placeholder="Titular de la tarjeta">
-                                    <input type="number" placeholder="Número de la terjeta">
-                                    <label for="dia-hora">Fecha de expiración</label>
-                                    <input type="date" id="dia-hora" name="dia-hora">  
-                                    <input type="number" placeholder="Código de seguridad">
-                                    <input type="number" placeholder="DNI del titular de la tarjeta">
-                                </fieldset>
-                        
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Confirmar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalToggleLabel2">¡Muchas gracias por tu compra!</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          El pago se realizó correctamente. En tres días hábiles tu pedido estará llegando.
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn" data-bs-dismiss="modal">Ok</button>    
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                    <div class="cont-boton">
-                        <a class="btn btn-primary btn-compra" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Realizar pedido</a>
-                    </div>
-                  <!-- FIN RESERVAR-->
+        <section class="pago-carr">
+            <div class="cont-pago-carr">   
+                <div class="cont-total-carr">
+                    <p class="total-carr">Total del la compra</p>
+                </div>
+                
+                <div class="cont-precio-total-carr">
+                    <p class="precio-total-carr">$2000</p>
+                </div>
+            </div>
+            <div class="boton-carr">
+                <button>Realizar pedido</button>
             </div>
         </section>
     </main>

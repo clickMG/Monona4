@@ -19,7 +19,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
-main .sec-carrito .cont-carrito .cont-boton .btn-primary, main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, main .sec-serv .cont-servs .serv .info-serv .btn-serv {
+main .pago-carr .boton-carr button, main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, main .sec-serv .cont-servs .serv .info-serv .btn-serv {
   background-color: #FFC400;
   text-decoration: none;
   color: #000000;
@@ -30,7 +30,7 @@ main .sec-carrito .cont-carrito .cont-boton .btn-primary, main .sec-prod .cont-p
   font-size: 20px;
   transition: 0.5s;
 }
-main .sec-carrito .cont-carrito .cont-boton .btn-primary:hover, main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, main .sec-serv .cont-servs .serv .info-serv .btn-serv:hover {
+main .pago-carr .boton-carr button:hover, main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, main .sec-serv .cont-servs .serv .info-serv .btn-serv:hover {
   background-color: #FFF70D;
 }
 
@@ -959,119 +959,186 @@ main .sec-prod .cont-prods .prod .info-prod .descrip-prod {
     align-self: center;
   }
 }
-main .sec-carrito .cont-carrito .tit-carrito {
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .sect-carr {
+  min-width: 330px;
+  width: 60%;
+}
+main .sect-carr .tit-carr {
   font-family: "Glory", sans-serif;
   text-align: center;
   font-weight: bold;
   color: #FF940D;
-  font-size: 35px;
-  padding-top: 10px;
+  font-size: 30px;
+  padding-top: 5px;
   text-shadow: 1.5px 1.5px #413e38;
 }
-main .sec-carrito .cont-carrito .carrito {
+main .sect-carr .cont-item-carr {
+  display: grid;
+  grid-template-columns: 25% auto 25%;
+  margin: 5px;
+}
+main .sect-carr .cont-item-carr .cont-img-carr {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #413e38;
-  border-top: 1px solid #413e38;
-  margin: 0 40px;
 }
-main .sec-carrito .cont-carrito .carrito .img-carrito {
+main .sect-carr .cont-item-carr .cont-img-carr .img-carr {
   width: auto;
-  height: 200px;
-  padding: 15px;
+  height: 120px;
+  padding: 5px;
 }
-main .sec-carrito .cont-carrito .carrito .info-carrito {
-  padding: 15px;
-  width: 70%;
-}
-main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio {
+main .sect-carr .cont-item-carr .prod-cant-carr {
   display: flex;
   flex-direction: column;
+  padding: 15px;
 }
-main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .cant {
-  display: flex;
-  flex-direction: column;
-  margin: 2px;
-}
-main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .cant .nom-carrito {
+main .sect-carr .cont-item-carr .prod-cant-carr .prod-carr {
+  font-size: 16px;
   font-family: "Glory", sans-serif;
-  text-align: center;
-  font-weight: bold;
+  line-height: 0.9em;
   color: #252525;
-  font-size: 20px;
-  padding-top: 10px;
+  padding: 2px;
+  margin-bottom: 10px;
 }
-main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .cant .cant-num {
-  max-width: 40%;
-}
-main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .precio-carrito {
+main .sect-carr .cont-item-carr .prod-cant-carr label {
+  font-size: 14px;
   font-family: "Glory", sans-serif;
-  text-align: center;
-  font-weight: bold;
   color: #252525;
-  font-size: 25px;
-  padding-top: auto;
-  text-align: right;
+  padding: 0;
+  margin-bottom: 0;
 }
-main .sec-carrito .cont-carrito .carrito .total .precio-total {
-  flex-direction: row;
-  justify-content: space-between;
-}
-main .sec-carrito .cont-carrito .cont-total {
-  width: 100%;
-}
-main .sec-carrito .cont-carrito .modal .modal-dialog .modal-content .modal-body form fieldset input {
-  margin: 5px;
-}
-main .sec-carrito .cont-carrito .cont-boton {
+main .sect-carr .cont-item-carr .cont-precio-carr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
-  margin: 0 11%;
+  justify-content: center;
+}
+main .sect-carr .cont-item-carr .cont-precio-carr .precio-carr {
+  font-size: 20px;
+  font-family: "Glory", sans-serif;
+  font-weight: bold;
+  color: #252525;
+  padding: 5px;
+}
+main .sect-carr .linea {
+  border-top: 1px solid rgb(204, 204, 204);
+  height: 2px;
+  max-width: 90%;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+main .pago-carr {
+  min-width: 330px;
+  width: 60%;
   padding: 15px;
 }
+main .pago-carr .cont-pago-carr {
+  display: grid;
+  grid-template-columns: 75% auto;
+  margin: 5px;
+}
+main .pago-carr .cont-pago-carr .cont-total-carr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main .pago-carr .cont-pago-carr .cont-total-carr .total-carr {
+  font-size: 20px;
+  font-family: "Glory", sans-serif;
+  line-height: 0.9em;
+  color: #252525;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+main .pago-carr .cont-pago-carr .cont-precio-total-carr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .pago-carr .cont-pago-carr .cont-precio-total-carr .precio-total-carr {
+  font-size: 25px;
+  font-family: "Glory", sans-serif;
+  font-weight: bold;
+  color: #252525;
+  padding: 5px;
+}
+main .pago-carr .boton-carr {
+  display: flex;
+  flex-direction: row;
+}
+main .pago-carr .boton-carr button {
+  padding: 4px;
+  margin: 5px;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  main .sec-carrito .cont-carrito .carrito .img-carrito {
+  main .sect-carr {
+    min-width: 330px;
+    width: 90%;
+  }
+  main .sect-carr .tit-carr {
+    font-size: 40px;
+  }
+  main .sect-carr .cont-item-carr {
+    grid-template-columns: 15% auto 15%;
+  }
+  main .sect-carr .cont-item-carr .cont-img-carr .img-carr {
     width: auto;
-    height: 200px;
-    padding: 15px;
+    height: 120px;
+    padding: 5px;
   }
-  main .sec-carrito .cont-carrito .carrito .info-carrito {
-    padding: 15px;
-    width: 70%;
-  }
-  main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio {
+  main .sect-carr .cont-item-carr .prod-cant-carr {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
   }
-  main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .cant {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
-  main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .cant .nom-carrito {
-    font-family: "Glory", sans-serif;
-    text-align: center;
-    font-weight: bold;
-    color: #252525;
+  main .sect-carr .cont-item-carr .prod-cant-carr .prod-carr {
     font-size: 25px;
-    padding-top: 10px;
+    line-height: 0.9em;
+    width: 80%;
+    height: 100%;
+    padding: 10px;
   }
-  main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .cant .cant-num {
-    max-width: 40%;
+  main .sect-carr .cont-item-carr .prod-cant-carr label {
+    font-size: 20px;
+    padding: 5px;
   }
-  main .sec-carrito .cont-carrito .carrito .info-carrito .prod-precio .precio-carrito {
-    font-family: "Glory", sans-serif;
-    text-align: center;
-    font-weight: bold;
-    color: #252525;
+  main .sect-carr .cont-item-carr .prod-cant-carr .cant-carr {
+    padding: 5px;
+  }
+  main .sect-carr .cont-item-carr .cont-precio-carr .precio-carr {
+    font-size: 20px;
+  }
+  main .pago-carr {
+    width: 90%;
+    padding: 0;
+  }
+  main .pago-carr .cont-pago-carr {
+    grid-template-columns: 85% auto;
+  }
+  main .pago-carr .cont-pago-carr .cont-total-carr {
+    justify-content: right;
+  }
+  main .pago-carr .cont-pago-carr .cont-total-carr .total-carr {
     font-size: 30px;
-    padding-top: auto;
-    margin-top: revert;
+    padding: 5px 25px;
+  }
+  main .pago-carr .cont-pago-carr .cont-precio-total-carr .precio-total-carr {
+    font-size: 25px;
+  }
+  main .pago-carr .boton-carr {
+    justify-content: right;
+    margin: 20px 20px;
+  }
+  main .pago-carr .boton-carr button {
+    width: 25%;
   }
 }
 body {
