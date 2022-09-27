@@ -19,7 +19,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
-main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, main .sec-serv .cont-servs .serv .info-serv .btn-serv {
+main .sec-carrito .cont-carrito .cont-boton .btn-primary, main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .enviar, div div .card .boton, main .sec-serv .cont-servs .serv .info-serv .btn-serv {
   background-color: #FFC400;
   text-decoration: none;
   color: #000000;
@@ -30,7 +30,7 @@ main .sec-prod .cont-prods .prod .info-prod .btn-prod, .alto .formulario form .e
   font-size: 20px;
   transition: 0.5s;
 }
-main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, main .sec-serv .cont-servs .serv .info-serv .btn-serv:hover {
+main .sec-carrito .cont-carrito .cont-boton .btn-primary:hover, main .sec-prod .cont-prods .prod .info-prod .btn-prod:hover, .alto .formulario form .enviar:hover, div div .card .boton:hover, main .sec-serv .cont-servs .serv .info-serv .btn-serv:hover {
   background-color: #FFF70D;
 }
 
@@ -1022,7 +1022,17 @@ main .sec-carrito .cont-carrito .carrito .total .precio-total {
 main .sec-carrito .cont-carrito .cont-total {
   width: 100%;
 }
-
+main .sec-carrito .cont-carrito .modal .modal-dialog .modal-content .modal-body form fieldset input {
+  margin: 5px;
+}
+main .sec-carrito .cont-carrito .cont-boton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin: 0 11%;
+  padding: 15px;
+}
 @media screen and (min-width: 768px) {
   main .sec-carrito .cont-carrito .carrito .img-carrito {
     width: auto;
