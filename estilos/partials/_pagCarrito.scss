@@ -1,15 +1,16 @@
-main{
+.main-carr{
     display: flex;
     flex-direction: column;
     align-items: center;
     .sect-carr{
         
         min-width: 330px;
-        width: 60%;
+        // width: 60%;
         .tit-carr{
             
             @include titulos($color: $colorSec, $tamanio: 30px, $padTop: 5px);
             text-shadow: 1.5px 1.5px $grisClaro;
+            text-align: center;
         }
         .cont-item-carr{
             
@@ -22,6 +23,7 @@ main{
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
+
                 .img-carr{
                     
                     width: auto;
@@ -36,6 +38,7 @@ main{
                 display: flex;
                 flex-direction: column;
                 padding: 15px;
+
                 .prod-carr{
                     
                     font-size: 16px;
@@ -135,14 +138,7 @@ main{
         .boton-carr{
             display: flex;
             flex-direction: row;
-            
-            // button{
-            //     @extend %botonPpal;
-            //    padding: 4px;
-            //    margin: 5px;
-            //    width: 100%;
-            // }
-            
+           
             a{
                 @extend %botonPpal;
                 padding: 4px;
@@ -162,7 +158,7 @@ main{
 
 //-----------------------------------------@media---------------------------------------------
 @media screen and (min-width: 768px) {
-    main{
+    .main-carr{
         
         .sect-carr{
             min-width: 330px;
@@ -270,7 +266,7 @@ main{
 }
 
 @media screen and (min-width: 1200px) {
-    main{
+    .main-carr{
         
         .sect-carr{
             
