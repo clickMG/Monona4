@@ -1,0 +1,151 @@
+.main-fc{
+   
+    .tit-fc{
+        @include titulos($color: $colorSec, $tamanio: 35px, $padTop: 10px);
+        text-shadow: 1.5px 1.5px $grisClaro;
+        
+    }
+
+    .cont-form-fc{
+        // font-display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        .form-fc{
+            
+            fieldset{
+                border: 1px solid $grisOscuro;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 5px;
+                margin: 15px;
+                border-radius: 5px;
+                background-color: rgb(243, 240, 240);
+                
+
+                legend{
+                    font-family: $fuentePpal;
+                    padding: 3px;
+                }
+                input{
+                    padding: 5px;
+                    margin: 5px;
+                    border-radius: 5px;
+                }
+                label{
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    text-align: center;
+                    border: 1px solid $grisOscuro;
+                    border-radius: 5px 5px 0 0;
+                    padding: 2px;
+                    margin: 5px 5px 0 5px;
+                    background-color: rgb(245, 245, 245);
+                    font-size: 12px;
+                }
+
+                .fecha{
+                    margin-top: 0;
+                    border-radius: 0 0 5px 5px;
+                }
+               
+            }
+        }
+        .btn-primary{
+            @extend %botonPpal;
+        }
+    }
+}
+
+//-----------------------------------------------------@media---------------------------------
+
+@media screen and (min-width: 768px) {
+    .main-fc{
+   
+        .tit-fc{
+            
+        }
+    
+        .cont-form-fc{
+            width: 100%;
+            .form-fc{
+                
+                fieldset{
+                   flex-direction: row;
+                   flex-wrap: wrap;
+                   justify-content: center;
+                    legend{
+                        
+                    }
+                    input{
+                         width: 45%;
+                    }
+
+                    label{
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        text-align: center;
+                        border: 1px solid $grisOscuro;
+                        border-radius: 5px 0 0 5px;
+                        padding: 7px;
+                        margin: 5px 0 5px 5px;
+                        background-color: rgb(245, 245, 245);
+                        font-size: 12px;
+                    }
+    
+                    .fecha{
+                        margin-top: 0;
+                        border-radius: 0 5px 5px 0;
+                        margin:5px 5px 5px 0 ;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-fc{
+   
+        .tit-fc{
+            
+        }
+    
+        .cont-form-fc{
+            width: 90%;
+            .form-fc{
+                
+                fieldset{
+                   flex-direction: row;
+                   flex-wrap: wrap;
+                   justify-content: center;
+                    legend{
+                        
+                    }
+                    input{
+                         width: 45%;
+                    }
+
+                    label{
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                        text-align: center;
+                        border: 1px solid $grisOscuro;
+                        border-radius: 5px 0 0 5px;
+                        padding: 7px;
+                        margin: 5px 0 5px 5px;
+                        background-color: rgb(245, 245, 245);
+                        font-size: 12px;
+                    }
+    
+                    .fecha{
+                        margin-top: 0;
+                        border-radius: 0 5px 5px 0;
+                        margin:5px 5px 5px 0 ;
+                    }
+                }
+            }
+        }
+    }
+}

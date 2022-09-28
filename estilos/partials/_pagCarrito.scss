@@ -136,11 +136,23 @@ main{
             display: flex;
             flex-direction: row;
             
-            button{
+            // button{
+            //     @extend %botonPpal;
+            //    padding: 4px;
+            //    margin: 5px;
+            //    width: 100%;
+            // }
+            
+            a{
                 @extend %botonPpal;
-               padding: 4px;
-               margin: 5px;
-               width: 100%;
+                padding: 4px;
+                margin: 5px;
+                width: 100%;
+                height: 45px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
             }
             
         }
@@ -242,11 +254,83 @@ main{
             .boton-carr{
                 justify-content: right;
                 margin: 20px 20px;
-                button{
+                // button{
                
-                  width: 25%;
+                //   width: 25%;
+                // }
+
+                a{
+                    width: 25%;
                 }
                 
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    main{
+        
+        .sect-carr{
+            
+            .tit-carr{
+                
+            }
+            .cont-item-carr{
+                
+                .cont-img-carr{
+                   
+                    .img-carr{
+                      
+                    }
+                }
+                
+                .prod-cant-carr{
+                    
+                   
+                    .prod-carr{
+                       
+                    }
+                    label{
+                       
+                    }
+                    .cant-carr{
+                        
+                    }
+                }
+                .cont-precio-carr{
+                    
+                    
+                    .precio-carr{
+                        
+                     
+                    }
+                }
+            }
+        }
+    
+        .pago-carr{
+           
+            .cont-pago-carr{
+               
+                
+                .cont-total-carr{
+                    
+                    .total-carr{
+                       
+                    }
+                }
+                .cont-precio-total-carr{
+                  
+                    .precio-total-carr{
+                        
+                    }
+                }
+                
+            }
+            .boton-carr{ 
+                margin: 20px 50px;
             }
         }
     }
