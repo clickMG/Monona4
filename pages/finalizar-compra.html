@@ -87,8 +87,17 @@
                   <input type="text" placeholder="Titular de la tarjeta">
                   <input type="number" placeholder="Número de la terjeta">
                   <label for="dia-hora">Fecha de expiración</label>
-                  <!-- <p>Fecha de expiración</p> -->
-                  <input type="date" id="dia-hora" name="dia-hora" class="fecha">  
+                  <!-- <input type="date" id="dia-hora" name="dia-hora" class="fecha">   -->
+                  <div class="fecha">
+                    <select name="" id="" class="mes">
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                    </select>
+                    <select name="" id="" class="anio">
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                    </select>
+                  </div>
                   <input type="number" placeholder="Código de seguridad">
                   <input type="number" placeholder="DNI del titular de la tarjeta">
               </fieldset>
@@ -96,9 +105,12 @@
           </form>
 
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Confirmar compra
-          </button>
+          <div class="cont-btn">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Confirmar compra
+            </button>
+          </div>
+          
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -106,14 +118,13 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">¡Muchas gracias por tu compra!</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
                 </div>
                 <div class="modal-body">
                   El pago se realizó correctamente. En tres días hábiles tu pedido estará llegando.
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                 
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
                 </div>
               </div>
             </div>

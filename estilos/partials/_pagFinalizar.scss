@@ -11,6 +11,7 @@
         // flex-direction: column;
         // align-items: center;
         // justify-content: center;
+        
         .form-fc{
             
             fieldset{
@@ -32,12 +33,14 @@
                     padding: 5px;
                     margin: 5px;
                     border-radius: 5px;
+                    border: 1px solid $grisOscuro;
                 }
                 label{
                     margin-bottom: 0;
                     padding-bottom: 0;
                     text-align: center;
                     border: 1px solid $grisOscuro;
+                    border-bottom: none;
                     border-radius: 5px 5px 0 0;
                     padding: 2px;
                     margin: 5px 5px 0 5px;
@@ -46,15 +49,59 @@
                 }
 
                 .fecha{
-                    margin-top: 0;
+                    margin: 0 5px;
                     border-radius: 0 0 5px 5px;
+                    border-left: 0;
+                    border: 1px solid $grisOscuro;
+                    width: 95%;
+                    background-color: rgb(255, 255, 255);
+
+
+                    //probando
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    .anio{
+                        width: 45%;
+                        border: none;
+                        border-left: 1px solid $grisOscuro;
+                    }
+
+                    .mes{
+                        width: 40%;
+                        border: none;
+                    }
                 }
                
             }
         }
-        .btn-primary{
-            @extend %botonPpal;
+        .cont-btn{
+            display: flex;
+            justify-content: center;
+
+            .btn-primary{
+                @extend %botonPpal;
+                margin: 15px;
+                justify-self: end;
+                width: 100%;
+                padding: 3px;
+            }
         }
+
+        .modal{
+            .modal-dialog{
+                .modal-content{
+                    .modal-footer{
+                        .btn-secondary{
+                            background-color: $grisClaro;
+                            color: $colorPpal;
+                            border-color: $grisOscuro;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
 
@@ -87,17 +134,46 @@
                         padding-bottom: 0;
                         text-align: center;
                         border: 1px solid $grisOscuro;
+                        border-right: none;
                         border-radius: 5px 0 0 5px;
                         padding: 7px;
                         margin: 5px 0 5px 5px;
                         background-color: rgb(245, 245, 245);
                         font-size: 12px;
+                        width: 31%;
                     }
     
                     .fecha{
                         margin-top: 0;
                         border-radius: 0 5px 5px 0;
                         margin:5px 5px 5px 0 ;
+                        width: 61%;
+
+                        .anio{
+                        margin-top: 0;
+                        border-radius: 0 5px 5px 0;
+                        margin:5px 5px 5px 0 ;
+                        
+                        }
+    
+                        .mes{
+                        margin-top: 0;
+                        border-radius: 0 5px 5px 0;
+                        margin:5px 5px 5px 0 ;
+                        
+                        }
+                    }
+                }
+            }
+            .cont-btn{
+                
+                justify-content: right;
+                width: 80%;
+                .btn-primary{
+                    width: 25%;
+                    margin: 15px 15px 30px 15px;
+                    &:focus{
+                        box-shadow: none;
                     }
                 }
             }
@@ -117,33 +193,30 @@
             .form-fc{
                 
                 fieldset{
-                   flex-direction: row;
-                   flex-wrap: wrap;
-                   justify-content: center;
+                   max-width: 800px;
                     legend{
                         
                     }
                     input{
-                         width: 45%;
+                         
                     }
 
                     label{
-                        margin-bottom: 0;
-                        padding-bottom: 0;
-                        text-align: center;
-                        border: 1px solid $grisOscuro;
-                        border-radius: 5px 0 0 5px;
-                        padding: 7px;
-                        margin: 5px 0 5px 5px;
-                        background-color: rgb(245, 245, 245);
-                        font-size: 12px;
+                        
                     }
     
                     .fecha{
-                        margin-top: 0;
-                        border-radius: 0 5px 5px 0;
-                        margin:5px 5px 5px 0 ;
+                        
                     }
+                }
+            }
+
+            .cont-btn{
+                
+                
+                .btn-primary{
+                   
+                    
                 }
             }
         }
