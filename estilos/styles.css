@@ -334,7 +334,7 @@ main .sec-serv .cont-servs .serv .info-serv .modal .modal-dialog .modal-content 
   }
 }
 .bgImg-text-tptc {
-  background-image: url("../../IMG/imagen1.jpg");
+  background-image: url("https://i.ibb.co/cv8TVZs/imagen-inicio.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 115%;
@@ -607,7 +607,7 @@ footer div p {
 }
 
 .img-fondo-contacto {
-  background-image: url(../../IMG/contactar.jpg);
+  background-image: url("https://i.ibb.co/Jv0D5gR/contactar.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -634,7 +634,7 @@ footer div p {
   }
 }
 .nos-main {
-  background-image: url(../../IMG/perrito-nosotros.jpg);
+  background-image: url("https://i.ibb.co/bBt6scn/perrito-nosotros.webp");
   background-size: cover;
 }
 .nos-main .nos-sect {
