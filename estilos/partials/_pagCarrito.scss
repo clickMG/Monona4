@@ -5,7 +5,7 @@
     .sect-carr{
         
         min-width: 330px;
-        // width: 60%;
+        
         .tit-carr{
             
             @include titulos($color: $colorSec, $tamanio: 30px, $padTop: 5px);
@@ -107,7 +107,6 @@
                   
                 .total-carr{
                     
-                      
                     font-size: 20px;
                     font-family: $fuentePpal;
                     line-height: 0.9em;
@@ -170,10 +169,7 @@
             .cont-item-carr{
                 grid-template-columns: 15% auto 15%;
                 .cont-img-carr{
-                    // display: flex;
-                    // flex-direction: row;
-                    // align-items: center;
-                    // justify-content: center;
+                    
                     .img-carr{
                         
                         width: auto;
@@ -204,10 +200,6 @@
                 }
                 .cont-precio-carr{
                     
-                    // display: flex;
-                    // flex-direction: row;
-                    // align-items: center;
-                    // justify-content: center;
                     .precio-carr{
                         font-size: 20px;
                      
@@ -223,9 +215,7 @@
                 grid-template-columns: 85% auto;
                 
                 .cont-total-carr{
-                    // display: flex;
-                    // flex-direction: row;
-                    // align-items: center;
+                    
                     justify-content: right;
     
                     .total-carr{
@@ -234,12 +224,7 @@
                     }
                 }
                 .cont-precio-total-carr{
-                    
-                    // display: flex;
-                    // flex-direction: row;
-                    // align-items: center;
-                    // justify-content: center;
-    
+                   
                     .precio-total-carr{
                         
                         font-size: 25px;
@@ -250,11 +235,7 @@
             .boton-carr{
                 justify-content: right;
                 margin: 20px 20px;
-                // button{
                
-                //   width: 25%;
-                // }
-
                 a{
                     width: 25%;
                 }
@@ -268,63 +249,8 @@
 @media screen and (min-width: 1200px) {
     .main-carr{
         
-        .sect-carr{
-            
-            .tit-carr{
-                
-            }
-            .cont-item-carr{
-                
-                .cont-img-carr{
-                   
-                    .img-carr{
-                      
-                    }
-                }
-                
-                .prod-cant-carr{
-                    
-                   
-                    .prod-carr{
-                       
-                    }
-                    label{
-                       
-                    }
-                    .cant-carr{
-                        
-                    }
-                }
-                .cont-precio-carr{
-                    
-                    
-                    .precio-carr{
-                        
-                     
-                    }
-                }
-            }
-        }
-    
         .pago-carr{
-           
-            .cont-pago-carr{
-               
-                
-                .cont-total-carr{
-                    
-                    .total-carr{
-                       
-                    }
-                }
-                .cont-precio-total-carr{
-                  
-                    .precio-total-carr{
-                        
-                    }
-                }
-                
-            }
+            
             .boton-carr{ 
                 margin: 20px 50px;
             }

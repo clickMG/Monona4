@@ -20,10 +20,7 @@ main{
                         border-bottom: 1px solid transparent;
                         
                         &:hover{
-                            // color: $grisOscuro;
-                            // border-bottom: 1px solid $grisOscuro;
-                            // border-radius: 3px;
-                            // padding: 5px;
+                           
                             color: $grisOscuro;
                             font-weight:550;
                             
@@ -58,9 +55,7 @@ main{
                                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
                             }
                         }
-                        // &:not(.collapsed)::after{
-                        //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-                        // }
+                        
                         &:focus{
                             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.247);
                         }
@@ -172,15 +167,7 @@ main{
                 ul{
                     position: sticky;
                     top: 150px;
-                    li{
-                        
-                        a{
-                            
-                            &:hover{
-                                
-                            }
-                        }
-                    }
+                    
                 }
             }
 
@@ -190,30 +177,19 @@ main{
         }
         .cont-prods{
 
-            .tit-prod {
-                
-            }
-
             .prod{
         
                 &:hover{
                     border: solid 1px rgb(184, 184, 184);
                     
                 }
-                .img-prod{
-                    
-                }
+                
                 .info-prod{
 
-                    .nota-prod{
-        
-                    }
                     .nom-prod{
                         @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: 10px);
                     }
-                    .precio-prod{
                     
-                    }
                     .descrip-prod{
                         display: block !important;
                         
@@ -221,9 +197,7 @@ main{
                         font-size: 15px;
                     
                     }
-                    .btn-prod{
                     
-                    }
                 }
             }
         }
@@ -236,67 +210,13 @@ main{
             
             .filtros-prod{
          
-                .categ-prod{
-                   
-                }
-
                 .filtros-img{
                     max-width: 180px;
                     align-self: center;
                 }
     
-                ul{
-                    
-                    li{
-                        
-                        a{
-                            
-                            &:hover{
-                                
-                            }
-                        }
-                    }
-                }
-            }
-
-            .filtros-prod-mov{
-                
             }
         }
-        .cont-prods{
-            .prod{
-        
-                &:hover{
-                    
-                    
-                }
-                .img-prod{
-                    
-                }
-                .info-prod{
-                
-                    .nota-prod{
-        
-                    }
-                    .nom-prod{
-                        
-                    }
-                    .precio-prod{
-                    
-                    }
-                    .descrip-prod{
-                      
-                    
-                    }
-                    .btn-prod{
-                    
-                    }
-                }
-            }
-        }
+   
     }    
-}
-
-@media screen and (min-width: 1200px){
-    
 }

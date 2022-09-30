@@ -55,9 +55,7 @@ main{
                                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
                             }
                         }
-                        // &:not(.collapsed)::after{
-                        //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-                        // }
+                       
                         &:focus{
                             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.247);
                         }
@@ -198,61 +196,7 @@ main{
 @media screen and (min-width: 480px){
     main{
         .sec-serv{
-            .filtros-serv{
-                .categ-serv{
-                  
-                }
-    
-                ul{
-                    li{
-                        a{
-                            
-                            
-                            &:hover{
-                                
-                            }
-                        }
-                    }
-                }
-            }
-    
-            .filtros-serv-mov{
-              
-                .accordion-item{
-                    
-                    .accordion-header{
-                        
-                        .accordion-button{
-                            
-                            &:not(.collapsed){
-                               
-                                &::after{
-                                    
-                                }
-                            }
-                            // &:not(.collapsed)::after{
-                            //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-                            // }
-                            &:focus{
-                               
-                            }
-                        }
-                    }
-        
-                    ul{
-                        li{
-                            
-                            a{
-                                
-                                &:hover{
-                                   
-                                }
-                            }
-                        }
-                    }
-                }  
-            }
-    
+            
             .cont-servs{
     
                 .tit-serv {
@@ -266,51 +210,12 @@ main{
     
                     .info-serv{
                         
-                        .nota-serv{
-
-                        }
-                        .nom-serv{
-                            
-                        }
-                        .precio-serv{
-                            // @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: auto);
-                            // text-align: left;
+                        .precio-serv{                          
                             font-size: 20px;
                         }
-                        .descrip-serv{
-                         
-                        }
+                        
                         .btn-serv{
                             font-size: 20px;
-                        }
-    
-                        .modal{
-                            .modal-dialog{
-                                .modal-content{
-                                    .modal-header{
-                                    
-                                        h5{
-                                            
-                                        }
-                                    }
-                                    .modal-body{
-                                        form{
-                                            .fecha-hora{
-
-                                            }
-                                        }
-                                    }
-    
-                                    .modal-footer{
-                                      
-                                        .btn{
-                                            &:hover{
-                                                
-                                            }
-                                        }
-                                    }
-                                }
-                            }
                         }
                     }
                 }
@@ -345,15 +250,7 @@ main{
                 ul{
                     position: sticky;
                     top: 150px;
-                    // li{
-                        
-                    //     a{
-                            
-                    //         &:hover{
-                                
-                    //         }
-                    //     }
-                    // }
+                    
                 }
             }
 
@@ -373,21 +270,14 @@ main{
                         border: solid 1px rgb(184, 184, 184);
                         
                     }
-                    // .img-serv{
-                        
-                    // }
+                    
                     .info-serv{
     
-                        // .nota-serv{
-            
-                        // }
                         .nom-serv{
                             @include titulos($color: $grisOscuro, $tamanio: 20px, $padTop: 10px);
                             text-align: left;
                         }
-                        // .precio-serv{
                         
-                        // }
                         .descrip-serv{
                             display: block !important;
                             
@@ -395,9 +285,7 @@ main{
                             font-size: 15px;
                         
                         }
-                        // .btn-serv{
-                        
-                        // }
+                       
                     }
                 }
             }
@@ -412,93 +300,12 @@ main{
             
             .filtros-serv{
          
-                // .categ-serv{
-                   
-                // }
-
                 .filtros-img{
                     max-width: 180px;
                     align-self: center;
                 }
-    
-                // ul{
-                    
-                //     li{
-                        
-                //         a{
-                            
-                //             &:hover{
-                                
-                //             }
-                //         }
-                //     }
-                // }
             }
 
-            // .filtros-serv-mov{
-                
-            // }
-
-            // .cont-servs{
-        //     .serv{
-        //         &:hover{
-                     
-        //         }
-        //         .img-serv{
-                    
-        //         }
-        //         .info-serv{
-                
-        //             .nota-serv{
-        
-        //             }
-        //             .nom-serv{
-                        
-        //             }
-        //             .precio-serv{
-                    
-        //             }
-        //             .descrip-serv{
-                      
-                    
-        //             }
-        //             .btn-serv{
-                    
-        //             }
-                    // .modal{
-                       
-                    //     .modal-dialog{
-                    //         .modal-content{
-                               
-                    //             .modal-header{
-                                  
-                    //                 h5{
-                                        
-                    //                 }
-                    //             }
-                    //             .modal-body{
-                    //                 form{
-                    //                     .fecha-hora{
-                                           
-                    //                     }
-                    //                 }
-                    //             }
-
-                    //             .modal-footer{
-                                   
-                    //                 .btn{
-                                       
-                    //                     &:hover{
-                                            
-                    //                     }
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }
-        //         }
-        //     }
-        // }
         }
         
     }    
@@ -525,102 +332,12 @@ main{
                 }
             }
     
-            .filtros-serv-mov{
-              
-                .accordion-item{
-                    
-                    .accordion-header{
-                        
-                        .accordion-button{
-                            
-                            &:not(.collapsed){
-                               
-                                &::after{
-                                    
-                                }
-                            }
-                            // &:not(.collapsed)::after{
-                            //     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-                            // }
-                            &:focus{
-                               
-                            }
-                        }
-                    }
-        
-                    ul{
-                        li{
-                            
-                            a{
-                                
-                                &:hover{
-                                   
-                                }
-                            }
-                        }
-                    }
-                }  
-            }
-    
             .cont-servs{
     
                 .tit-serv {
                     font-size: 40px;
                 }
                 
-                .serv{
-                    .img-serv{
-                        
-                    }
-    
-                    .info-serv{
-                        
-                        .nota-serv{
-
-                        }
-                        .nom-serv{
-                            
-                        }
-                        .precio-serv{
-                            
-                        }
-                        .descrip-serv{
-                         
-                        }
-                        .btn-serv{
-                            
-                        }
-    
-                        .modal{
-                            .modal-dialog{
-                                .modal-content{
-                                    .modal-header{
-                                    
-                                        h5{
-                                            
-                                        }
-                                    }
-                                    .modal-body{
-                                        form{
-                                            .fecha-hora{
-
-                                            }
-                                        }
-                                    }
-    
-                                    .modal-footer{
-                                      
-                                        .btn{
-                                            &:hover{
-                                                
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
         }
     }

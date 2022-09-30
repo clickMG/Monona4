@@ -9,8 +9,6 @@
     .formulario{
         border: map-get($estilos-form, "borde");
         margin: map-get($estilos-form, "margen");
-
-        // background-color: rgba(0, 0, 0, 0.596);
         background-color: rgba(20, 20, 20, 0.815);;
         margin: 0 15%;
         
@@ -56,24 +54,7 @@
     
         .formulario{
            margin: 0 15%;
-            form{
-                
-                .form-label{
-                    
-                }
-    
-                .form-control{
-                    
-                }
-                .enviar{
-                    
-                }
-            }
         }
-    }
-    
-    .img-fondo-contacto{
-        
     }
     
 }
@@ -88,24 +69,7 @@
     
         .formulario{
            margin: 0 25%;
-            form{
-                
-                .form-label{
-                    
-                }
-    
-                .form-control{
-                    
-                }
-                .enviar{
-                    
-                }
-            }
         }
-    }
-    
-    .img-fondo-contacto{
-        
     }
     
 }
